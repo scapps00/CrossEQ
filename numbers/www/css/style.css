@@ -1,22 +1,29 @@
 body {
     background-color: #85cfa3;
-    overflow: hidden;
-    position: absolute;
-    top: 0px;
+    color: #424242;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
 }
 
-.tableContainer {
+.tableContainer1 {
     width: 98%;
     display: block;
     margin: auto;
 }
 
-td {
-    border: 2px #424242 solid;
-    margin: 0px;
+.tableContainer2 {
+    display: block;
+    margin: auto;
 }
 
-table {
+td, .choices tr td {
+    border: 2px #424242 solid;
+    padding: 0px;
+}
+
+.grid {
     width: 100%;
 }
 
@@ -28,4 +35,9 @@ td {
 [class="2-1"], [class="3-6"], [class="4-1"], [class="5-6"],
 [class="6-1"], [class="6-3"], [class="6-5"], [class="6-6"] {
     background-color: #424242;
+}
+
+.choices tr td {
+    width: 35px;
+    height: 35px;
 }

@@ -3,12 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>Numbers</title>
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="tableContainer">
-        <table>
-            <tr class="1">
+        <div class="tableContainer1">
+        <table class="grid">
+            <tr>
                 <td class="1-1"></td>
                 <td class="1-2"></td>
                 <td class="1-3"></td>
@@ -16,7 +17,7 @@
                 <td class="1-5"></td>
                 <td class="1-6"></td>
             </tr>
-            <tr class="2">
+            <tr>
                 <td class="2-1"></td>
                 <td class="2-2"></td>
                 <td class="2-3"></td>
@@ -24,7 +25,7 @@
                 <td class="2-5"></td>
                 <td class="2-6"></td>
             </tr>
-            <tr class="3">
+            <tr>
                 <td class="3-1"></td>
                 <td class="3-2"></td>
                 <td class="3-3"></td>
@@ -32,7 +33,7 @@
                 <td class="3-5"></td>
                 <td class="3-6"></td>
             </tr>
-            <tr class="4">
+            <tr>
                 <td class="4-1"></td>
                 <td class="4-2"></td>
                 <td class="4-3"></td>
@@ -40,7 +41,7 @@
                 <td class="4-5"></td>
                 <td class="4-6"></td>
             </tr>
-            <tr class="5">
+            <tr>
                 <td class="5-1"></td>
                 <td class="5-2"></td>
                 <td class="5-3"></td>
@@ -48,7 +49,7 @@
                 <td class="5-5"></td>
                 <td class="5-6"></td>
             </tr>
-            <tr class="6">
+            <tr>
                 <td class="6-1"></td>
                 <td class="6-2"></td>
                 <td class="6-3"></td>
@@ -58,10 +59,49 @@
             </tr>
             </div>
         </table>
+        <br>
+        <div class="tableContainer2">
+        <table class="choices">
+            <tr>
+                <td class="1">7</td>
+                <td class="2">×</td>
+                <td class="3">8</td>
+                <td class="4">x</td>
+                <td class="5">1</td>
+            </tr>
+            <tr>
+                <td class="6">+</td>
+                <td class="7">+</td>
+                <td class="8">2</td>
+                <td class="9">5</td>
+                <td class="10">11</td>
+            </tr>
+            <tr>
+                <td class="11">÷</td>
+                <td class="12">÷</td>
+                <td class="13">8</td>
+                <td class="14">20</td>
+                <td class="15">2</td>
+            </tr>
+            <tr>
+                <td class="16">4</td>
+                <td class="17">3</td>
+                <td class="18">-</td>
+                <td class="19">-</td>
+                <td class="20">+</td>
+            </tr>
+        </table>
+        </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
-            var width = $("table").css("width");
-            $("table").css("height", width);
+            var widthTable = $("table").width();
+            $("table").css("height", widthTable + "px");
+
+            var widthTd = $("[class='1-1']").width();
+            $(".choices tr td").width(widthTd);
+            $(".choices").height($(".choices").width() / 5 * 4);
+
+            $(".tableContainer2").width($(".choices").width());
         </script>
     </body>
 </html>
