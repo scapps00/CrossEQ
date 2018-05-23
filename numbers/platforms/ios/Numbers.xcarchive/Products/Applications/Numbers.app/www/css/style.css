@@ -2,14 +2,20 @@ body {
     background-color: #85cfa3;
     color: #424242;
     font-family: 'Nunito', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
     vertical-align: middle;
 }
 
+table {
+    table-layout: fixed;
+}
+
 .tableContainer1, .tableContainer2 {
-    width: 98%;
+    width: 90%;
+    max-width: 90%;
+    min-width: 90%;
     display: block;
     margin: auto;
 }
@@ -28,10 +34,21 @@ td {
     padding: 0px;
     border-radius: 10px;
     padding: 0px;
+    width: 16.66666667%;
 }
 
-.grid, .bottom {
+.grid tr {
+    height: 16.6666666667%;
+}
+
+.choices tr {
+    height: 25%;
+}
+
+.grid, .choices {
     width: 100%;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 td {
@@ -45,7 +62,6 @@ td {
 }
 
 .blank {
-    border-style: none;
+    border: 2px #85cfa3 solid;
     background: #85cfa3;
-    font-size: 30px;
 }

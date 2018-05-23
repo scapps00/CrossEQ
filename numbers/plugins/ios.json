@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.game.numbers"
+    },
+    "cordova-plugin-screen-orientation": {
+      "PACKAGE_NAME": "com.game.numbers"
     }
   },
   "dependent_plugins": {}
