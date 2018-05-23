@@ -1,5 +1,5 @@
 body {
-    background-color: #85cfa3;
+    background-image: url("../img/swirl_pattern.png");
     color: #424242;
     font-family: 'Nunito', sans-serif;
     font-size: 25px;
@@ -37,7 +37,7 @@ table {
     padding-top: 8px;
 }
 
-.grid td {
+.grid tr td {
     border: 2px #424242 solid;
     padding: 0px;
     border-radius: 10px;
@@ -45,7 +45,7 @@ table {
     width: 16.66666667%;
 }
 
-.choices td {
+.choices tr td {
     border: 2px #424242 solid;
     padding: 0px;
     border-radius: 10px;
@@ -69,8 +69,6 @@ td {
     background-color: #ebebeb;
 }
 
-[class="1-1"], [class="1-2"], [class="1-4"], [class="1-6"],
-[class="2-1"], [class="3-6"], [class="4-1"], [class="5-6"],
-[class="6-1"], [class="6-3"], [class="6-5"], [class="6-6"] {
+.blank {
     background-color: #424242;
 }

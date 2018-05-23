@@ -86,11 +86,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		1+N+zI21vnV/tbe1mABx5MpZiBE=
+		Z0CC00aRPoQmri+/DvSkaA1GQYg=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		0kzHONWD82PKLAOXnHcDcBimA1U=
+		hUNe/L+jGtc1aBd+1u58ybxzVwA=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		72cp6hmQ33qP9VkJmIsNSprWTuA=
+		8l+jx9taU+RKkAzTORmZk8JkoMc=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		b3nQgKtp3JVSqbmTNFQU5JBcxts=
+		yKTCStsEkPg2OqSEFM0y0XQbxog=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -210,19 +210,35 @@
 		</data>
 		<key>www/css/style.css</key>
 		<data>
-		5v/WEn3CP3ligKppA2G31NnILOQ=
+		6OhInxg91dvf8M9D7fz5npK1JxA=
 		</data>
 		<key>www/img/logo.png</key>
 		<data>
 		MW0GF0+VJyF3L6n2kH6NKUswUL0=
 		</data>
+		<key>www/img/swirl_pattern.png</key>
+		<data>
+		Vpz0k2Q0ruxRpilWt05kVXr/CNQ=
+		</data>
+		<key>www/img/swirl_pattern.zip</key>
+		<data>
+		bVok2q3A1WK/cvd4WatArcRrRgI=
+		</data>
+		<key>www/img/swirl_pattern/readme.txt</key>
+		<data>
+		THIhvBhdPckRqUYLC9zZQPJv5JA=
+		</data>
+		<key>www/img/swirl_pattern/swirl_pattern.png</key>
+		<data>
+		7paIyPGXyxxgGckZBgCuXYx81aA=
+		</data>
 		<key>www/index.html</key>
 		<data>
-		M3SAHK2h7D9cqImhkfCBrcyRNuw=
+		45LV6oPhrYHWDT0xB8Y+qSe6oGo=
 		</data>
 		<key>www/js/format.js</key>
 		<data>
-		jb68BsKa2pVH5FVrfm63p30xs+Q=
+		vJRUUWZTXgsLztkv81CDBVhyVsQ=
 		</data>
 		<key>www/js/index.js</key>
 		<data>
@@ -230,11 +246,15 @@
 		</data>
 		<key>www/js/moveNum.js</key>
 		<data>
-		bcDkuDJz4trTF9blxLcn1OVbKO8=
+		rX5bu+VuiotRLsZVoU0fqY3EpMo=
 		</data>
 		<key>www/js/orient.js</key>
 		<data>
 		cDAOh/2a7/N46FTfjsqu/osjvnw=
+		</data>
+		<key>www/js/solutionGen.js</key>
+		<data>
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 		</data>
 		<key>www/plugins/cordova-plugin-screen-orientation/www/screenorientation.js</key>
 		<data>
@@ -467,22 +487,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1+N+zI21vnV/tbe1mABx5MpZiBE=
+			Z0CC00aRPoQmri+/DvSkaA1GQYg=
 			</data>
 			<key>hash2</key>
 			<data>
-			bKvZgsjiV5b/gmbpPtyoXWBbyKQ3erdAnx7nSMQNzpI=
+			rsagf2mGHrs+nVunXZEZjQSAun3CekRTWdpTrfoR8RM=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0kzHONWD82PKLAOXnHcDcBimA1U=
+			hUNe/L+jGtc1aBd+1u58ybxzVwA=
 			</data>
 			<key>hash2</key>
 			<data>
-			QF1Qoem6GHuKTa2+AptTeY3Wl11Mwhwr8oxtno6a3VE=
+			9BKqD4Or2bNRIr8qhGbed6RVMQ3x/78YuPX9Mpwnkjk=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -500,11 +520,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			72cp6hmQ33qP9VkJmIsNSprWTuA=
+			8l+jx9taU+RKkAzTORmZk8JkoMc=
 			</data>
 			<key>hash2</key>
 			<data>
-			ibi237t9D9lOafY28RSQAN6bcbuqQnnqE+ENhd9O3A8=
+			A+1X1BDknjemXeds21HvAxIHBIG7mjaht4DsIlcypYI=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -687,11 +707,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b3nQgKtp3JVSqbmTNFQU5JBcxts=
+			yKTCStsEkPg2OqSEFM0y0XQbxog=
 			</data>
 			<key>hash2</key>
 			<data>
-			6LI3RzGLwae8XxkWCP4BaCOBeamQ9H3wjOGoeyv/xCo=
+			vIKWgEo7IdGTclKw2+V1xF10B7Ps+siOYc4co/QlX0M=
 			</data>
 		</dict>
 		<key>config.xml</key>
@@ -786,11 +806,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5v/WEn3CP3ligKppA2G31NnILOQ=
+			6OhInxg91dvf8M9D7fz5npK1JxA=
 			</data>
 			<key>hash2</key>
 			<data>
-			gc7rw4BnXCmxP5OzGuKsgint/y8cwz1tm34V322xdo4=
+			0tR4mKcrvEDYLvpAqywyxZ+nLQC8cmObsQWNggNIRC4=
 			</data>
 		</dict>
 		<key>www/img/logo.png</key>
@@ -804,26 +824,70 @@
 			8JmHrhEr2x//0WYZDQyLdQyvokuPf/rAP06Yuah4neM=
 			</data>
 		</dict>
+		<key>www/img/swirl_pattern.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vpz0k2Q0ruxRpilWt05kVXr/CNQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			djfg78xXfOy3EYpxO4YrsQ+a1U4HQCeKK9DcUYIADQI=
+			</data>
+		</dict>
+		<key>www/img/swirl_pattern.zip</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bVok2q3A1WK/cvd4WatArcRrRgI=
+			</data>
+			<key>hash2</key>
+			<data>
+			QeNyUCZc8jE1oWbhQ6JDLSVg+okqSjUFzIMmFcBgMag=
+			</data>
+		</dict>
+		<key>www/img/swirl_pattern/readme.txt</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			THIhvBhdPckRqUYLC9zZQPJv5JA=
+			</data>
+			<key>hash2</key>
+			<data>
+			R7xmESD5lgQIUzIINT6JhxmoMNsbRPOs2g5njpS2AB4=
+			</data>
+		</dict>
+		<key>www/img/swirl_pattern/swirl_pattern.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7paIyPGXyxxgGckZBgCuXYx81aA=
+			</data>
+			<key>hash2</key>
+			<data>
+			3f9DPFO1Bmf8hMEHCmDmdvoV3RVJ6IeaEnz4RHAl4KQ=
+			</data>
+		</dict>
 		<key>www/index.html</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			M3SAHK2h7D9cqImhkfCBrcyRNuw=
+			45LV6oPhrYHWDT0xB8Y+qSe6oGo=
 			</data>
 			<key>hash2</key>
 			<data>
-			ANc6u/aioYoCWvUEkw2RhIaw4EUnVQ/KGPhZZTO4Wvs=
+			0vg6mrBUvgw2aqAPj9sh69CCThrqo2uoWURCRlEmAPM=
 			</data>
 		</dict>
 		<key>www/js/format.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jb68BsKa2pVH5FVrfm63p30xs+Q=
+			vJRUUWZTXgsLztkv81CDBVhyVsQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			5hiQQlr/TkK3bjagH5HO8bpEN50ntlE4AWdAjvIQYZQ=
+			6MEGNXaZ49J8jC76zaTgZtgnOI1bWJZczq/ureuGiRc=
 			</data>
 		</dict>
 		<key>www/js/index.js</key>
@@ -841,11 +905,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bcDkuDJz4trTF9blxLcn1OVbKO8=
+			rX5bu+VuiotRLsZVoU0fqY3EpMo=
 			</data>
 			<key>hash2</key>
 			<data>
-			NcobDqKWpW+4XKMuxWwZQat50QT98LHPvS4siw+iF1s=
+			+/Lq2x1U6WNs7BjAY7Fs2/CH04zdfKMpPoV1ky9o+lo=
 			</data>
 		</dict>
 		<key>www/js/orient.js</key>
@@ -857,6 +921,17 @@
 			<key>hash2</key>
 			<data>
 			2C2D2MdB0nSzmKGqHJ5/sU1u6KyO6p2jwgwXtigvUns=
+			</data>
+		</dict>
+		<key>www/js/solutionGen.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+			</data>
+			<key>hash2</key>
+			<data>
+			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
 		<key>www/plugins/cordova-plugin-screen-orientation/www/screenorientation.js</key>

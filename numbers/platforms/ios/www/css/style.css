@@ -1,5 +1,5 @@
 body {
-    background-color: #85cfa3;
+    background-image: url("../img/swirl_pattern.png");
     color: #424242;
     font-family: 'Nunito', sans-serif;
     font-size: 25px;
@@ -8,14 +8,22 @@ body {
     vertical-align: middle;
 }
 
+.countdown {
+    font-size: 40px;
+}
+
 table {
     table-layout: fixed;
 }
 
-.tableContainer1, .tableContainer2 {
+.tableContainer1 {
     width: 90%;
-    max-width: 90%;
-    min-width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.tableContainer2 {
+    width: 75%;
     display: block;
     margin: auto;
 }
@@ -29,12 +37,20 @@ table {
     padding-top: 8px;
 }
 
-td {
+.grid tr td {
     border: 2px #424242 solid;
     padding: 0px;
     border-radius: 10px;
     padding: 0px;
     width: 16.66666667%;
+}
+
+.choices tr td {
+    border: 2px #424242 solid;
+    padding: 0px;
+    border-radius: 10px;
+    padding: 0px;
+    width: 20%;
 }
 
 .grid tr {
@@ -47,21 +63,12 @@ td {
 
 .grid, .choices {
     width: 100%;
-    min-width: 100%;
-    max-width: 100%;
 }
 
 td {
     background-color: #ebebeb;
 }
 
-[class="1-1"], [class="1-2"], [class="1-4"], [class="1-6"],
-[class="2-1"], [class="3-6"], [class="4-1"], [class="5-6"],
-[class="6-1"], [class="6-3"], [class="6-5"], [class="6-6"] {
-    background-color: #424242;
-}
-
 .blank {
-    border: 2px #85cfa3 solid;
-    background: #85cfa3;
+    background-color: #424242;
 }
