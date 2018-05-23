@@ -1,29 +1,36 @@
 body {
     background-color: #85cfa3;
     color: #424242;
-    font-family: 'Lora', serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 20px;
+    font-weight: bold;
     text-align: center;
-    line-height: 20px;
+    vertical-align: middle;
 }
 
-.tableContainer1 {
+.tableContainer1, .tableContainer2 {
     width: 98%;
     display: block;
     margin: auto;
 }
 
-.tableContainer2 {
-    display: block;
-    margin: auto;
+.tableContainer1 {
+    padding-bottom: 8px;
 }
 
-td, .choices tr td {
+.tableContainer2 {
+    border-top: 2px #424242 solid;
+    padding-top: 8px;
+}
+
+td {
     border: 2px #424242 solid;
+    padding: 0px;
+    border-radius: 10px;
     padding: 0px;
 }
 
-.grid {
+.grid, .bottom {
     width: 100%;
 }
 
@@ -37,7 +44,8 @@ td {
     background-color: #424242;
 }
 
-.choices tr td {
-    width: 35px;
-    height: 35px;
+.blank {
+    border-style: none;
+    background: #85cfa3;
+    font-size: 30px;
 }

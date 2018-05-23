@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Numbers</title>
-        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -57,9 +57,8 @@
                 <td class="6-5"></td>
                 <td class="6-6"></td>
             </tr>
-            </div>
         </table>
-        <br>
+    </div>
         <div class="tableContainer2">
         <table class="choices">
             <tr>
@@ -68,6 +67,7 @@
                 <td class="3">8</td>
                 <td class="4">x</td>
                 <td class="5">1</td>
+                <td class="counterMin blank">3</td>
             </tr>
             <tr>
                 <td class="6">+</td>
@@ -75,6 +75,7 @@
                 <td class="8">2</td>
                 <td class="9">5</td>
                 <td class="10">11</td>
+                <td class="blank">:</td>
             </tr>
             <tr>
                 <td class="11">÷</td>
@@ -82,6 +83,7 @@
                 <td class="13">8</td>
                 <td class="14">20</td>
                 <td class="15">2</td>
+                <td class="counterSec1 blank">0</td>
             </tr>
             <tr>
                 <td class="16">4</td>
@@ -89,19 +91,20 @@
                 <td class="18">-</td>
                 <td class="19">-</td>
                 <td class="20">+</td>
+                <td class="counterSec2 blank">0</td>
             </tr>
         </table>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
-            var widthTable = $("table").width();
-            $("table").css("height", widthTable + "px");
+            var widthTable = $(".grid").width();
+            $(".grid").css("height", widthTable + "px");
 
-            var widthTd = $("[class='1-1']").width();
-            $(".choices tr td").width(widthTd);
-            $(".choices").height($(".choices").width() / 5 * 4);
+            $(".choices").width($(".grid").width());
 
-            $(".tableContainer2").width($(".choices").width());
+            $(".choices").height($(".choices").width() / 6 * 4);
+
+            $(".choices tr td").width($(".choices").width() / 6);
         </script>
     </body>
 </html>
