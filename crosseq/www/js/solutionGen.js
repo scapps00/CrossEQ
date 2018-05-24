@@ -172,7 +172,7 @@ function solution15() {
 }
 
 function solution5() {
-    if (solution[55] >= solution[53] && solution[44] <= solution[24] && solution[44] >= solution[24] && solution[53] + solution[55] >= 100 && solution[44] > solution[24] && solution[24] % solution[44] != 0 && solution[53] % solution[55] != 0 && solution[53] < solution[55] && solution[44] % solution[24] != 0 && solution [44] < solution[24]) {
+    if (solution[55] >= solution[53] && solution[44] <= solution[24] && solution[44] >= solution[24] && solution[53] + solution[55] >= 100 && solution[44] > solution[24] && solution[24] % solution[44] != 0 && solution[53] % solution[55] != 0 && solution[53] < solution[55] && solution[44] % solution[24] != 0 && solution [44] < solution[24] && solution[53] * solution[55] >= 100 && solution[64] * solution[44] >= 100) {
         solution[23] = randomOp();
         solution[32] = randomOp();
         solution[45] = randomOp();
@@ -199,7 +199,7 @@ function solution5() {
             solution[51] = solution[53] + solution[55];
         }
     } else if (solution[54] === "×") {
-        if (solution[44] > solution[24] || solution[24] % solution[44] != 0) {
+        if (solution[44] > solution[24] || solution[24] % solution[44] != 0 || solution[53] * solution[55] >= 100 || solution[64] * solution[44] >= 100) {
             solution[54] = randomOp();
             solution5();         
         } else {
@@ -245,5 +245,53 @@ function placeChoices(item) {
     }
 }
 
+function hints() {
+    var trigger = randomNum(1, 4);
+    if (trigger === 1) {
+        $("[class='5-4']").text(solution[54]);
+        $("[class='5-4']").addClass("static");
+        solution[54] = "";
+        $("[class='3-1']").text(solution[31]);
+        $("[class='3-1']").addClass("static");
+        solution[31] = "";
+        $("[class='2-2']").text(solution[22]);
+        $("[class='2-2']").addClass("static");
+        solution[22] = "";
+    } else if (trigger === 2) {
+        $("[class='2-3']").text(solution[23]);
+        $("[class='2-3']").addClass("static");
+        solution[23] = "";
+        $("[class='3-1']").text(solution[31]);
+        $("[class='3-1']").addClass("static");
+        solution[23] = "";
+        $("[class='2-4']").text(solution[24]);
+        $("[class='2-4']").addClass("static");
+        solution[24] = "";
+    } else if (trigger === 3) {
+        $("[class='2-3']").text(solution[23]);
+        $("[class='2-3']").addClass("static");
+        solution[23] = "";
+        $("[class='5-3']").text(solution[53]);
+        $("[class='5-3']").addClass("static");
+        solution[53] = "";
+        $("[class='4-4']").text(solution[44]);
+        $("[class='4-4']").addClass("static");
+        solution[44] = "";
+    } else if (trigger === 4) {
+        $("[class='2-4']").text(solution[24]);
+        $("[class='2-4']").addClass("static");
+        solution[24] = "";
+        $("[class='5-4']").text(solution[54]);
+        $("[class='5-4']").addClass("static");
+        solution[54] = "";
+        $("[class='4-4']").text(solution[44]);
+        $("[class='4-4']").addClass("static");
+        solution[44] = "";
+    }
+}
+
+hints();
+
 solution.forEach(placeChoices);
+
 assignClick();

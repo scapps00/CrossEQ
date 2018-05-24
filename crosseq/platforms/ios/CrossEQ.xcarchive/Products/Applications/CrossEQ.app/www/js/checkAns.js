@@ -1,13 +1,12 @@
-$("td:empty:not(.equal").click(function(event) {
-    event.preventDefault;
-    if (eval(solution[22], solution[23], solution[24], solution[26])) {
-        if (eval(solution[31], solution[32], solution[33], solution[35])) {
-            if (eval(solution[44], solution[45], solution[46], solution[42])) {
-                if (eval(solution[53], solution[54], solution[55], solution[52])) {
-                    if (eval(solution[22], solution[32], solution[42], solution[62])) {
-                        if (eval(solution[13], solution[23], solution[33], solution[53])) {
-                            if (eval(solution[44], solution[54], solution[64], solution[14])) {
-                                if (eval(solution[35], solution[45], solution[55], solution[15])) {
+function checkAns() {
+    if (eval(textGrid("2-2"), textGrid("2-3"), textGrid("2-4"), textGrid("2-6"))) {
+        if (eval(textGrid("3-1"), textGrid("3-2"), textGrid("3-3"), textGrid("3-5"))) {
+            if (eval(textGrid("4-4"), textGrid("4-5"), textGrid("4-6"), textGrid("4-2"))) {
+                if (eval(textGrid("5-3"), textGrid("5-4"), textGrid("5-5"), textGrid("5-2"))) {
+                    if (eval(textGrid("2-2"), textGrid("3-2"), textGrid("4-2"), textGrid("6-2"))) {
+                        if (eval(textGrid("1-3"), textGrid("2-3"), textGrid("3-3"), textGrid("5-3"))) {
+                            if (eval(textGrid("4-4"), textGrid("5-4"), textGrid("6-4"), textGrid("1-4"))) {
+                                if (eval(textGrid("3-5"), textGrid("4-5"), textGrid("5-5"), textGrid("1-5"))) {
                                     window.clearInterval(clock);
                                     youWon();
                                 }
@@ -18,7 +17,11 @@ $("td:empty:not(.equal").click(function(event) {
             }
         }
     }
-});
+}
+
+function textGrid(index) {
+    return $("[class='"+ index + "']").text();
+}
 
 function eval(first, operator, second, result) {
     if (operator === "+") {

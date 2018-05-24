@@ -1,5 +1,5 @@
 function assignClick() {
-    $("td:not(:empty):not(.equal)").click(function(event1) {
+    $("td:not(:empty):not(.equal):not(.static)").click(function(event1) {
         event1.preventDefault();
         $(".selected").css("background-color", "#ebebeb");
         $("td:empty:not(.blank)").unbind();
@@ -13,6 +13,7 @@ function assignClick() {
             $(".selected").css("background-color", "#ebebeb");
             $(".selected").removeClass(".selected");
             $("td").unbind();
+            checkAns();
             assignClick();
         });
     });

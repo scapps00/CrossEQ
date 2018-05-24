@@ -3,7 +3,11 @@ function clockInc() {
         $("#sec").text("00");
         $("#min").text(parseInt($("#min").text()) + 1);
     } else {
-        $("#sec").text("0" + (parseInt($("#sec").text()) + 1).toString());
+        if ($("#sec").text().charAt(0) === "0" && $("#sec").text().charAt(1) != 9) {
+            $("#sec").text("0" + (parseInt($("#sec").text()) + 1).toString());
+        } else {
+            $("#sec").text((parseInt($("#sec").text()) + 1).toString());
+        }
     }
 }
 
