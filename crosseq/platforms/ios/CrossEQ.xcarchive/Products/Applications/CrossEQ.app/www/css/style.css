@@ -1,0 +1,83 @@
+body {
+    background-image: url("../img/swirl_pattern.png");
+    color: #424242;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.countdown {
+    font-size: 40px;
+    border: 2px #424242 solid;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    width: 50%;
+    line-height: 45px;
+    height: 45px;
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
+}
+
+table {
+    table-layout: fixed;
+}
+
+.tableContainer1 {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.tableContainer2 {
+    width: 75%;
+    display: block;
+    margin: auto;
+}
+
+.tableContainer1 {
+    padding-bottom: 8px;
+}
+
+.tableContainer2 {
+    border-top: 2px #424242 solid;
+    padding-top: 8px;
+}
+
+.grid tr td {
+    border: 2px #424242 solid;
+    padding: 0px;
+    border-radius: 10px;
+    padding: 0px;
+    width: 16.66666667%;
+}
+
+.choices tr td {
+    border: 2px #424242 solid;
+    padding: 0px;
+    border-radius: 10px;
+    padding: 0px;
+    width: 20%;
+}
+
+.grid tr {
+    height: 16.6666666667%;
+}
+
+.choices tr {
+    height: 25%;
+}
+
+.grid, .choices {
+    width: 100%;
+}
+
+td {
+    background-color: #ebebeb;
+}
+
+.blank {
+    background-color: #424242;
+}
