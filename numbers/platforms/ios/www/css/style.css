@@ -1,7 +1,7 @@
 body {
     background-image: url("../img/swirl_pattern.png");
     color: #424242;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Lobster', cursive;
     font-size: 25px;
     font-weight: bold;
     text-align: center;
@@ -10,6 +10,15 @@ body {
 
 .countdown {
     font-size: 40px;
+    border: 2px #424242 solid;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    width: 50%;
+    line-height: 45px;
+    height: 45px;
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
 }
 
 table {
