@@ -246,3 +246,4 @@ function placeChoices(item) {
 }
 
 solution.forEach(placeChoices);
+assignClick();

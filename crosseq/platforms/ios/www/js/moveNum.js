@@ -18,5 +18,3 @@ function assignClick() {
     });
 }
 
-assignClick();
-
