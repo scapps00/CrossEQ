@@ -236,31 +236,13 @@ solution15();
 solution5();
 solution64();
 
+function placeChoices(item) {
+    var choicePick = randomNum(1, 20);
+    if ($("[class='" + choicePick + "']").text() == "") {
+        $("[class='" + choicePick + "']").text(item);
+    } else {
+        placeChoices(item);
+    }
+}
 
-$("[class='2-2']").text(solution[22]);
-$("[class='2-3']").text(solution[23]);
-$("[class='2-4']").text(solution[24]);
-$("[class='2-6']").text(solution[26]);
-
-$("[class='3-1']").text(solution[31]);
-$("[class='3-2']").text(solution[32]);
-$("[class='3-3']").text(solution[33]);
-$("[class='3-5']").text(solution[35]);
-
-$("[class='1-3']").text(solution[13]);
-$("[class='5-3']").text(solution[53]);
-
-$("[class='4-2']").text(solution[42]);
-$("[class='6-2']").text(solution[62]);
-
-$("[class='4-4']").text(solution[44]);
-$("[class='4-5']").text(solution[45]);
-$("[class='4-6']").text(solution[46]);
-
-$("[class='1-5']").text(solution[15]);
-$("[class='5-5']").text(solution[55]);
-
-$("[class='5-1']").text(solution[51]);
-$("[class='5-4']").text(solution[54]);
-
-$("[class='6-4']").text(solution[64]);
+solution.forEach(placeChoices);
