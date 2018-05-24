@@ -3,13 +3,14 @@ function randomNum(min, max) {
 }
 
 var ops = ["+", "-", "×", "÷"];
+//var ops = ["×", "÷"];
 
 function randomOp() {
     return ops[randomNum(0, 3)];
 }
 
 function findMultTotal(divisor) {
-    var total = randomNum(divisor, 80);
+    var total = randomNum((divisor * 2), 80);
     if (total % divisor === 0) {
         return total;
     } else {
@@ -18,22 +19,34 @@ function findMultTotal(divisor) {
 }
 
 function findDivisor(total) {
-    var divisor = randomNum(1, total);
-    if (total % divisor === 0) {
-        return divisor;
+    if (total % 2 != 0 && total % 3 != 0 && total % 5 != 0 && total % 7 != 0) {
+        var divisor = randomNum(1, total);
+        if (total % divisor === 0) {
+            return divisor;
+        } else {
+            return findDivisor(total);
+        }
     } else {
-        return findDivisor(total);
+        var divisor = randomNum(2, (total / 2));
+        if (total % divisor === 0) {
+            return divisor;
+        } else {
+            return findDivisor(total);
+        }
     }
 }
 
 var solution = [];
+
 solution[23] = randomOp();
 solution[32] = randomOp();
+solution[45] = randomOp();
+solution[54] = randomOp();
 
 function solution2() {
     if (solution[23] === "-") {
         solution[22] = randomNum(2, 40);
-        solution[24] = randomNum(1, solution[22]);
+        solution[24] = randomNum(1, (solution[22] - 1));
         solution[26] = solution[22] - solution[24];
     } else if (solution[23] === "+") {
         solution[22] = randomNum(1, 20);
@@ -65,7 +78,7 @@ function solution2() {
 function solution3() {
     if (solution[32] === "-") {
         solution[31] = randomNum(2, 40);
-        solution[33] = randomNum(1, solution[31]);
+        solution[33] = randomNum(1, (solution[31] - 1));
         solution[35] = solution[31] - solution[33];
     } else if (solution[32] === "+") {
         solution[31] = randomNum(1, 20);
@@ -96,7 +109,7 @@ function solution3() {
 
 function solution13() {
     if (solution[23] === "-") {
-        solution[13] = randomNum(solution[33], 41);
+        solution[13] = randomNum((solution[33] + 1), 41);
         solution[53] = solution[13] - solution[33];
     } else if (solution[23] === "+") {
         solution[13] = randomNum(1, 20);
@@ -111,12 +124,118 @@ function solution13() {
 }
 
 function solution42() {
+    if (solution[32] === "-") {
+        solution[42] = randomNum(1, (solution[22] - 1));
+        solution[62] = solution[22] - solution[42];
+    } else if (solution[32] === "+") {
+        solution[42] = randomNum(1, 20);
+        solution[62] = solution[22] + solution[42];
+    } else if (solution[32] === "×") {
+        solution[62] = findMultTotal(solution[22]);
+        solution[42] = solution[62] / solution[22];
+    } else if (solution[32] === "÷") {
+        solution[42] = findDivisor(solution[22]);
+        solution[62] = solution[22] / solution[42];
+    }
+}
 
+function solution4() {
+    if (solution[45] === "-") {
+        solution[44] = randomNum((solution[42] + 1), 40);
+        solution[46] = solution[44] - solution[42];
+    } else if (solution[45] === "+") {
+        solution[44] = randomNum(1, (solution[42] - 1));
+        solution[46] = solution[42] - solution[44];
+    } else if (solution[45] === "×") {
+        solution[44] = findDivisor(solution[42]);
+        solution[46] = solution[42] / solution[44];
+    } else if (solution[45] === "÷") {
+        solution[44] = findMultTotal(solution[42]);
+        solution[46] = solution[44] / solution[42];
+    }
+}
+
+function solution15() {
+    if (solution[45] === "-") {
+        solution[55] = randomNum(1, (solution[35] - 1));
+        solution[15] = solution[35] - solution[55];
+    } else if (solution[45] === "+") {
+        solution[55] = randomNum(1, 20);
+        solution[15] = solution[35] + solution[55];
+    } else if (solution[45] === "×") {
+        solution[15] = findMultTotal(solution[35]);
+        solution[55] = solution[15] / solution[35];
+    } else if (solution[45] === "÷") {
+        solution[55] = findDivisor(solution[35]);
+        solution[15] = solution[35] / solution[55];
+    }
+}
+
+function solution5() {
+    if (solution[55] >= solution[53] && solution[44] <= solution[24] && solution[44] >= solution[24] && solution[53] + solution[55] >= 100 && solution[44] > solution[24] && solution[24] % solution[44] != 0 && solution[53] % solution[55] != 0 && solution[53] < solution[55] && solution[44] % solution[24] != 0 && solution [44] < solution[24]) {
+        solution[23] = randomOp();
+        solution[32] = randomOp();
+        solution[45] = randomOp();
+        solution[54] = randomOp();
+        solution2();
+        solution3();
+        solution13();
+        solution42();
+        solution4();
+        solution15();
+        solution5();
+    } else if (solution[54] === "-") {
+        if (solution[55] >= solution[53] || solution[44] <= solution[24]) {
+            solution[54] = randomOp();
+            solution5();
+        } else {
+            solution[51] = solution[53] - solution[55];
+        }
+    } else if (solution[54] === "+") {
+        if (solution[44] >= solution[24] || solution[53] + solution[55] >= 100) {
+            solution[54] = randomOp();
+            solution5();     
+        } else {
+            solution[51] = solution[53] + solution[55];
+        }
+    } else if (solution[54] === "×") {
+        if (solution[44] > solution[24] || solution[24] % solution[44] != 0) {
+            solution[54] = randomOp();
+            solution5();         
+        } else {
+            solution[51] = solution[53] * solution[55];
+        }
+    } else if (solution[54] === "÷") {
+        if (solution[53] % solution[55] != 0 || solution[53] < solution[55] || solution[44] % solution[24] != 0 || solution [44] < solution[24]) {
+            solution[54] = randomOp();
+            solution5();        
+        } else {
+            solution[51] = solution[53] / solution[55];
+        }
+    }
+}
+
+function solution64() {
+    if (solution[54] === "-") {
+        solution[64] = solution[44] - solution[24];
+    } else if (solution[54] === "+") {
+        solution[64] = solution[24] - solution[44];
+    } else if (solution[54] === "×") {
+        solution[64] = solution[24] / solution[44];
+    } else if (solution[54] === "÷") {
+        solution[64] = solution[44] / solution[24];
+    }
 }
 
 solution2();
 solution3();
 solution13();
+solution42();
+solution4();
+solution15();
+solution5();
+solution64();
+
 
 $("[class='2-2']").text(solution[22]);
 $("[class='2-3']").text(solution[23]);
@@ -130,3 +249,18 @@ $("[class='3-5']").text(solution[35]);
 
 $("[class='1-3']").text(solution[13]);
 $("[class='5-3']").text(solution[53]);
+
+$("[class='4-2']").text(solution[42]);
+$("[class='6-2']").text(solution[62]);
+
+$("[class='4-4']").text(solution[44]);
+$("[class='4-5']").text(solution[45]);
+$("[class='4-6']").text(solution[46]);
+
+$("[class='1-5']").text(solution[15]);
+$("[class='5-5']").text(solution[55]);
+
+$("[class='5-1']").text(solution[51]);
+$("[class='5-4']").text(solution[54]);
+
+$("[class='6-4']").text(solution[64]);
