@@ -86,11 +86,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		Z0CC00aRPoQmri+/DvSkaA1GQYg=
+		SLHD5sF0w9JQae0EBLkLEgS76LU=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		hUNe/L+jGtc1aBd+1u58ybxzVwA=
+		+JReA4aZkGGSBNpyrhPFId5PIio=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		8l+jx9taU+RKkAzTORmZk8JkoMc=
+		oJ9Ec8iKZsVYa01uZDTJL3KJOJQ=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		yKTCStsEkPg2OqSEFM0y0XQbxog=
+		ZjiaRNuoi5mX4QmXut437gR2d3I=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -246,7 +246,7 @@
 		</data>
 		<key>www/js/moveNum.js</key>
 		<data>
-		rX5bu+VuiotRLsZVoU0fqY3EpMo=
+		UDLa9sEhn0vATiPddtV209ePmWg=
 		</data>
 		<key>www/js/orient.js</key>
 		<data>
@@ -487,22 +487,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z0CC00aRPoQmri+/DvSkaA1GQYg=
+			SLHD5sF0w9JQae0EBLkLEgS76LU=
 			</data>
 			<key>hash2</key>
 			<data>
-			rsagf2mGHrs+nVunXZEZjQSAun3CekRTWdpTrfoR8RM=
+			Twwd/BCp0VqRdGAnrom90lYADVUEpvdOd20SoPuRnDU=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hUNe/L+jGtc1aBd+1u58ybxzVwA=
+			+JReA4aZkGGSBNpyrhPFId5PIio=
 			</data>
 			<key>hash2</key>
 			<data>
-			9BKqD4Or2bNRIr8qhGbed6RVMQ3x/78YuPX9Mpwnkjk=
+			vqT6AORFq6MPl1hGVblnP8Y4TT5c6uAHG5KOC+8NLsU=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -520,11 +520,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8l+jx9taU+RKkAzTORmZk8JkoMc=
+			oJ9Ec8iKZsVYa01uZDTJL3KJOJQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			A+1X1BDknjemXeds21HvAxIHBIG7mjaht4DsIlcypYI=
+			C8vgAAFRnBJ+shAhVFt1WnDHvdeBMC+UWdZya4u7hck=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -707,11 +707,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yKTCStsEkPg2OqSEFM0y0XQbxog=
+			ZjiaRNuoi5mX4QmXut437gR2d3I=
 			</data>
 			<key>hash2</key>
 			<data>
-			vIKWgEo7IdGTclKw2+V1xF10B7Ps+siOYc4co/QlX0M=
+			3gryE4A4VzPbWD/itWNtdZo3YR2QW6nJyNv3qaw5lac=
 			</data>
 		</dict>
 		<key>config.xml</key>
@@ -905,11 +905,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rX5bu+VuiotRLsZVoU0fqY3EpMo=
+			UDLa9sEhn0vATiPddtV209ePmWg=
 			</data>
 			<key>hash2</key>
 			<data>
-			+/Lq2x1U6WNs7BjAY7Fs2/CH04zdfKMpPoV1ky9o+lo=
+			CxfYtiBuNB8ABCqnWxMjIM3LRp4FfHiMzSf27iuDxR8=
 			</data>
 		</dict>
 		<key>www/js/orient.js</key>
