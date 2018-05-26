@@ -236,61 +236,16 @@ solution15();
 solution5();
 solution64();
 
-function placeChoices(item) {
+function placeChoices(item, index) {
     var choicePick = randomNum(1, 20);
     if ($("[class='" + choicePick + "']").text() == "") {
         $("[class='" + choicePick + "']").text(item);
+        var r = index.toString() + "r";
+        //$("[class='" + choicePick + "']").addClass(r);
     } else {
-        placeChoices(item);
+        placeChoices(item, index);
     }
 }
-
-function hints() {
-    var trigger = randomNum(1, 4);
-    if (trigger === 1) {
-        $("[class='5-4']").text(solution[54]);
-        $("[class='5-4']").addClass("static");
-        solution[54] = "";
-        $("[class='3-1']").text(solution[31]);
-        $("[class='3-1']").addClass("static");
-        solution[31] = "";
-        $("[class='2-2']").text(solution[22]);
-        $("[class='2-2']").addClass("static");
-        solution[22] = "";
-    } else if (trigger === 2) {
-        $("[class='2-3']").text(solution[23]);
-        $("[class='2-3']").addClass("static");
-        solution[23] = "";
-        $("[class='3-1']").text(solution[31]);
-        $("[class='3-1']").addClass("static");
-        solution[23] = "";
-        $("[class='2-4']").text(solution[24]);
-        $("[class='2-4']").addClass("static");
-        solution[24] = "";
-    } else if (trigger === 3) {
-        $("[class='2-3']").text(solution[23]);
-        $("[class='2-3']").addClass("static");
-        solution[23] = "";
-        $("[class='5-3']").text(solution[53]);
-        $("[class='5-3']").addClass("static");
-        solution[53] = "";
-        $("[class='4-4']").text(solution[44]);
-        $("[class='4-4']").addClass("static");
-        solution[44] = "";
-    } else if (trigger === 4) {
-        $("[class='2-4']").text(solution[24]);
-        $("[class='2-4']").addClass("static");
-        solution[24] = "";
-        $("[class='5-4']").text(solution[54]);
-        $("[class='5-4']").addClass("static");
-        solution[54] = "";
-        $("[class='4-4']").text(solution[44]);
-        $("[class='4-4']").addClass("static");
-        solution[44] = "";
-    }
-}
-
-hints();
 
 solution.forEach(placeChoices);
 

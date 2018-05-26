@@ -7,7 +7,7 @@ function checkAns() {
                         if (eval(textGrid("1-3"), textGrid("2-3"), textGrid("3-3"), textGrid("5-3"))) {
                             if (eval(textGrid("4-4"), textGrid("5-4"), textGrid("6-4"), textGrid("1-4"))) {
                                 if (eval(textGrid("3-5"), textGrid("4-5"), textGrid("5-5"), textGrid("1-5"))) {
-                                    window.clearInterval(clock);
+                                    clearInterval(clock);
                                     youWon();
                                 }
                             }
@@ -20,18 +20,21 @@ function checkAns() {
 }
 
 function textGrid(index) {
-    return $("[class='"+ index + "']").text();
+    return $("[class='" + index + "']").text();
 }
 
 function eval(first, operator, second, result) {
+    var firstInt = parseInt(first);
+    var secondInt = parseInt(second);
+    var resultInt = parseInt(result);
     if (operator === "+") {
-        return (first + second === result);
+        return firstInt + secondInt == resultInt;
     } else if (operator === "-") {
-        return (first - second === result);
+        return firstInt - secondInt == resultInt;
     } else if (operator === "×"){
-        return (first * second === result);
+        return firstInt * secondInt == resultInt;
     } else if (operator === "÷") {
-        return (first / second === result);
+        return firstInt / secondInt == resultInt;
     }
 }
 

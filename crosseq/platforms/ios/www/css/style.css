@@ -8,17 +8,53 @@ body {
     vertical-align: middle;
 }
 
+.nobr {
+    width: 95%;
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
+}
+
+.nobr table tr {
+    height: 45px;
+}
+
 .countdown {
+    font-size: 35px;
+    border: 2px #424242 solid;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    width: 29%;
+    line-height: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.hint {
+    font-size: 25px;
+    border: 2px #424242 solid;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    width: 21%;
+    line-height: 45px;
+}
+
+.score {
     font-size: 40px;
     border: 2px #424242 solid;
     background-color: #ebebeb;
     border-radius: 10px;
-    width: 50%;
+    width: 29%;
     line-height: 45px;
-    height: 45px;
-    display: block;
-    margin: auto;
-    margin-bottom: 8px;
+}
+
+.answer {
+    font-size: 25px;
+    border: 2px #424242 solid;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    width: 15%;
+    line-height: 45px;
 }
 
 table {
@@ -80,4 +116,8 @@ td {
 
 .blank {
     background-color: #424242;
+}
+
+.static {
+    background-color: #85cfa3;
 }

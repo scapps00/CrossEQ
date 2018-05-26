@@ -7,7 +7,24 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="countdown"><span class="clock"><span id="min">0</span>:<span id="sec">00</span></span></div>
+        <div class="nobr">
+            <table>
+                <tr>
+                    <td class="hint">
+                        hint
+                    </td>
+                    <td class="countdown">
+                        <span class="clock"><span id="min">0</span>:<span id="sec">00</span></span>
+                    </td>
+                    <td class="score">
+                        000
+                    </td>
+                    <td class="answer">
+                        ans
+                    </td>
+                </tr>
+            </table>
+        </div>
         <div class="tableContainer1">
         <table class="grid">
             <tr>
@@ -94,11 +111,12 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="cordova.js"></script>
+        <script src="js/checkAns.js"></script>
         <script src="js/orient.js"></script>
         <script src="js/format.js"></script>
         <script src="js/moveNum.js"></script>
         <script src="js/solutionGen.js"></script>
-        <script src="js/checkAns.js"></script>
         <script src="js/clock.js"></script>
+        <script src="js/hint.js"></script>
     </body>
 </html>
