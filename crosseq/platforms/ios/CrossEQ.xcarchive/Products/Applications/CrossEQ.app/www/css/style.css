@@ -121,3 +121,9 @@ td {
 .static {
     background-color: #85cfa3;
 }
+
+.youWin {
+    visibility: hidden;
+    color: #424242;
+    font-size: 65px;
+}

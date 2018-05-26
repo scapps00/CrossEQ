@@ -236,12 +236,13 @@ solution15();
 solution5();
 solution64();
 
+var choicesArray = [];
+
 function placeChoices(item, index) {
     var choicePick = randomNum(1, 20);
     if ($("[class='" + choicePick + "']").text() == "") {
         $("[class='" + choicePick + "']").text(item);
-        var r = index.toString() + "r";
-        //$("[class='" + choicePick + "']").addClass(r);
+        choicesArray[index] = choicePick;
     } else {
         placeChoices(item, index);
     }

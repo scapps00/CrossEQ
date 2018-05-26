@@ -9,16 +9,19 @@ solutionArray = [];
 
 solution.forEach(placeInArray);
 
+var stopHint = [];
+
 function placeHint() {
     var hintIndex = randomNum(0, 19);
     if (solutionArray[hintIndex] != "") {
+        stopHint.push(hintIndex);
         var classOfHint = indexToClass(solutionArray[hintIndex].ind);
         $("[class=" + classOfHint + "]").text(solutionArray[hintIndex].num);
         $("[class=" + classOfHint + "]").addClass("static");
-        var r = solutionArray[hintIndex].ind.toString() + "r";
-        $("[class='" + r + "']").text("");
+        $("[class='" + choicesArray[solutionArray[hintIndex].ind] + "']").text("");
         solutionArray[hintIndex] = "";
-        assignClick();
+    } else if (stopHint.length == 20) {
+        return
     } else {
         placeHint();
     }
@@ -32,4 +35,5 @@ function indexToClass(index) {
 $(".hint").click(function() {
     placeHint();
     checkAns();
+    assignClick();
 });
