@@ -3,7 +3,12 @@ var hintTracker = [];
 function hintScore() {
     hintTracker.push(1);
     if (parseInt($(".score").text()) + (hintTracker.length * 15) < 999) {
-        $(".score").text(parseInt($(".score").text()) + (hintTracker.length * 15));
+        var scoreCalc = (parseInt($(".score").text()) + (hintTracker.length * 15)).toString();
+        if (scoreCalc.length == 2) {
+            $(".score").text("0" + scoreCalc);
+        } else {
+            $(".score").text(scoreCalc);
+        }
     } else {
         $(".score").text("999");
         gameOver();
@@ -12,7 +17,14 @@ function hintScore() {
 
 function moveScore() {
     if (parseInt($(".score").text()) + 5 < 999) {
-        $(".score").text(parseInt($(".score").text()) + 5);
+        var scoreCalc = (parseInt($(".score").text()) + 5).toString();
+        if (scoreCalc.length == 1) {
+            $(".score").text("00" + scoreCalc);
+        } else if (scoreCalc.length == 2) {
+            $(".score").text("0" + scoreCalc);
+        } else {
+            $(".score").text(scoreCalc);
+        }
     } else {
         $(".score").text("999");
         gameOver();
@@ -21,7 +33,12 @@ function moveScore() {
 
 function clockScore() {
     if (parseInt($(".score").text()) + 30 < 999) {
-        $(".score").text(parseInt($(".score").text()) + 30);
+        var scoreCalc = (parseInt($(".score").text()) + 30).toString();
+        if (scoreCalc.length == 2) {
+            $(".score").text("0" + scoreCalc);
+        } else {
+            $(".score").text(scoreCalc);
+        }
     } else {
         $(".score").text("999");
         gameOver();
