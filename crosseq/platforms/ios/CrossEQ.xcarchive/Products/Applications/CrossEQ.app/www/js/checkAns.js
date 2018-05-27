@@ -43,6 +43,7 @@ function eval(first, operator, second, result) {
 }
 
 function youWon() {
+    document.getElementById("winAudio").play();
     $(".tableContainer2").css("visibility", "hidden");
     $(".youWin").css("visibility", "visible");
     $(".youWin").text("you win!");

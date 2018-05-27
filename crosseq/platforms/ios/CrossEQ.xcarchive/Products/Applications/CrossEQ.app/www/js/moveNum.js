@@ -8,7 +8,7 @@ function assignClick() {
         $(".selected").css("background-color", "#ecbc76");
         $("td:empty:not(.blank)").click(function(event2) {
             event2.preventDefault();
-            document.getElementById("click").play();
+            document.getElementById("clickAudio").play();
             moveScore();
             $(event2.target).text($(".selected").text());
             var selectedClass = $(".selected").attr("class").split(" ");

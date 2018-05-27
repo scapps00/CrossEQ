@@ -86,11 +86,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		vqiEP8mqCytlJ4pwajGt2rtSb/s=
+		Yyi2mjw8vLjnSndXmQj6/idWX6s=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		5XNtafUH/15FE4EX0LSE5x21sFo=
+		iUcc71STER/cMPRcAdXNN1k3CoU=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		V0wzZyiEooVh0vHUdZl/tluW8/k=
+		b7buE9X6pMDmjQSAgsnWpuakDlo=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		lPjk3lfAKhJiBUf4H/DeeR7+LYQ=
+		JdKK6FhO+3QYvSOx8dpWxTJ5yKw=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -188,9 +188,49 @@
 		<data>
 		MYr3+DpRBfPiD3X0NUe6X1E+Z5Q=
 		</data>
+		<key>www/audio/ans/Sound Electronic Move.mp3</key>
+		<data>
+		ZAtv+MjGksbpu/d14SYSvEC86vY=
+		</data>
+		<key>www/audio/ans/ans.wav</key>
+		<data>
+		bStcp+yAX7hnm/ju/hxZ5fuABzw=
+		</data>
+		<key>www/audio/audiojungle-20274693-lose.zip</key>
+		<data>
+		mcrdUiBk3CSo3zv4+rjQwcrkCgU=
+		</data>
+		<key>www/audio/audiojungle-21928872-achievement-unlocked.zip</key>
+		<data>
+		Mfs8EVDFyHs7x74DZvQWXg5Es28=
+		</data>
+		<key>www/audio/audiojungle-21967805-magic-slide-up-1.zip</key>
+		<data>
+		PhI56GwnI4spp9dNljh399uJ0G8=
+		</data>
 		<key>www/audio/click.zip</key>
 		<data>
 		zeFqPzeGxH5z1zr11uUc47+NKf4=
+		</data>
+		<key>www/audio/hint.zip</key>
+		<data>
+		yGFl2YGyVOchZDSi7cWmDoVpMPM=
+		</data>
+		<key>www/audio/hint/Achievement Unlocked.mp3</key>
+		<data>
+		QoypuCm21fJryHNXlBjcM15TqSw=
+		</data>
+		<key>www/audio/hint/hint.wav</key>
+		<data>
+		haWH1GkMX4gC8sUHqt/qJ3dIoSE=
+		</data>
+		<key>www/audio/lose.wav</key>
+		<data>
+		5Auptmph2ol4PDY+ShNV1xBPi7o=
+		</data>
+		<key>www/audio/win.wav</key>
+		<data>
+		LRX0uAjwa30cPoxR3G4aHhgKOfs=
 		</data>
 		<key>www/cordova-js-src/exec.js</key>
 		<data>
@@ -218,7 +258,7 @@
 		</data>
 		<key>www/css/style.css</key>
 		<data>
-		t9Src9ulEtC5SVQ0VPykOgotomI=
+		sbQe/dsFi0XMNp4mEH9KPa0YWqo=
 		</data>
 		<key>www/img/logo.png</key>
 		<data>
@@ -242,11 +282,11 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		YSKFNbuEBwSmZMstKVbknulGxi0=
+		rSIobl0JAtT5Yxe/S4IjwBX+QFY=
 		</data>
 		<key>www/js/checkAns.js</key>
 		<data>
-		rXK76fjvLRAfkY1yYy0oFVZdrWI=
+		Nq7PPz9rR5qNLQtQScMamvmmhOU=
 		</data>
 		<key>www/js/clock.js</key>
 		<data>
@@ -258,7 +298,7 @@
 		</data>
 		<key>www/js/hint.js</key>
 		<data>
-		QQmp63vCeBFzYthZXpiPQFUXqPM=
+		R1YgolQzbwGd0EKKLmQLGIumaXQ=
 		</data>
 		<key>www/js/index.js</key>
 		<data>
@@ -266,7 +306,7 @@
 		</data>
 		<key>www/js/moveNum.js</key>
 		<data>
-		0CaCOZ0AjvHhloF/8onF3Seqkl0=
+		kcjnEBfGPCLLErmedCHuD9vOvjc=
 		</data>
 		<key>www/js/orient.js</key>
 		<data>
@@ -278,11 +318,11 @@
 		</data>
 		<key>www/js/score.js</key>
 		<data>
-		915tKVuk3YhHjnua8ARy5v+3PnU=
+		oCBs9XmroYzDAv2w0h0iyjntDEw=
 		</data>
 		<key>www/js/showAns.js</key>
 		<data>
-		Ek+HwW8DCYcSQELb9soFkCktGlY=
+		8iDlhv+w2kuGybX+l0NbhznzZxw=
 		</data>
 		<key>www/js/solutionGen.js</key>
 		<data>
@@ -515,22 +555,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vqiEP8mqCytlJ4pwajGt2rtSb/s=
+			Yyi2mjw8vLjnSndXmQj6/idWX6s=
 			</data>
 			<key>hash2</key>
 			<data>
-			RTKINysg3Mg5KvFZ6B0RtAK1AlDqdnaOfvL3wubRsVA=
+			rls/bPM4DUhjbMZyBlNCsgq6LSMSjAweHUL3F261PC0=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5XNtafUH/15FE4EX0LSE5x21sFo=
+			iUcc71STER/cMPRcAdXNN1k3CoU=
 			</data>
 			<key>hash2</key>
 			<data>
-			FHwi/sqB6pX4NlHJDocUpDzroiBf+Xz5v9WKYnc6N8M=
+			wmQz4OUaBCdvfb88/UtDcWTCtJ5PfBT5DvvQxvvL+xg=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -548,11 +588,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			V0wzZyiEooVh0vHUdZl/tluW8/k=
+			b7buE9X6pMDmjQSAgsnWpuakDlo=
 			</data>
 			<key>hash2</key>
 			<data>
-			uh/sZO3aodruz9XLsq7GAyFpYVv62ieCpU1QqLiVAYI=
+			LenJcjeGCTK7cbvtLU9lvii1htqgNKqpEZZYPNpYKfM=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -735,11 +775,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lPjk3lfAKhJiBUf4H/DeeR7+LYQ=
+			JdKK6FhO+3QYvSOx8dpWxTJ5yKw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Eue7oOdJmuLU8saKtKlpl7XJQr3Wxe0R+s3NRCGiIoY=
+			0Srmkd0PjdPKlNezdUNnYvZdV1R5YY5KVQaqa1QCADU=
 			</data>
 		</dict>
 		<key>config.xml</key>
@@ -775,6 +815,61 @@
 			EpnCVEas203mtObTDH/YxOpD6Kr/VODagOHJIni4Duk=
 			</data>
 		</dict>
+		<key>www/audio/ans/Sound Electronic Move.mp3</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZAtv+MjGksbpu/d14SYSvEC86vY=
+			</data>
+			<key>hash2</key>
+			<data>
+			Yf8HevMx3XHXrL6Zab+4uD/8ADYhgZQpnxEDidSkFsg=
+			</data>
+		</dict>
+		<key>www/audio/ans/ans.wav</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bStcp+yAX7hnm/ju/hxZ5fuABzw=
+			</data>
+			<key>hash2</key>
+			<data>
+			MVb7Xvg9K+0hWbH2CeQXZDhZgeK1CPWu941f10IFVzI=
+			</data>
+		</dict>
+		<key>www/audio/audiojungle-20274693-lose.zip</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mcrdUiBk3CSo3zv4+rjQwcrkCgU=
+			</data>
+			<key>hash2</key>
+			<data>
+			1pvwlpFINkYuTiHcTU1A2PBG66ahIf77HcsOJEiWtSc=
+			</data>
+		</dict>
+		<key>www/audio/audiojungle-21928872-achievement-unlocked.zip</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Mfs8EVDFyHs7x74DZvQWXg5Es28=
+			</data>
+			<key>hash2</key>
+			<data>
+			NZ6egnSC02WR3jhVdbv6Yw0+tNct7Gx2R9uMRuyXGjM=
+			</data>
+		</dict>
+		<key>www/audio/audiojungle-21967805-magic-slide-up-1.zip</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PhI56GwnI4spp9dNljh399uJ0G8=
+			</data>
+			<key>hash2</key>
+			<data>
+			2U/r91/uczmu0W0sA85H43jTiSY9PjCRQYLjoHyGQio=
+			</data>
+		</dict>
 		<key>www/audio/click.zip</key>
 		<dict>
 			<key>hash</key>
@@ -784,6 +879,61 @@
 			<key>hash2</key>
 			<data>
 			GCzBjSw+C3JID7ZdQENg9XtzWX2sykcmCHFNb/4NMZU=
+			</data>
+		</dict>
+		<key>www/audio/hint.zip</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yGFl2YGyVOchZDSi7cWmDoVpMPM=
+			</data>
+			<key>hash2</key>
+			<data>
+			CTaN/8ScDwSJyP++ErHNyQPCdl0uxoQTbjN+rfEj/yQ=
+			</data>
+		</dict>
+		<key>www/audio/hint/Achievement Unlocked.mp3</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QoypuCm21fJryHNXlBjcM15TqSw=
+			</data>
+			<key>hash2</key>
+			<data>
+			zu8LNM2LQDsZOgscxHU1ktYXbK/Enm2nn/QaijV1Uqk=
+			</data>
+		</dict>
+		<key>www/audio/hint/hint.wav</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			haWH1GkMX4gC8sUHqt/qJ3dIoSE=
+			</data>
+			<key>hash2</key>
+			<data>
+			c8UuTFKt9mXx3mAKFInXBQBMpXP/JoAUFfLagTZFFSQ=
+			</data>
+		</dict>
+		<key>www/audio/lose.wav</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5Auptmph2ol4PDY+ShNV1xBPi7o=
+			</data>
+			<key>hash2</key>
+			<data>
+			4uaYBlfqaUjVXw5x5rHTeRqfmi0wcTNFJLG7Us+yBuU=
+			</data>
+		</dict>
+		<key>www/audio/win.wav</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LRX0uAjwa30cPoxR3G4aHhgKOfs=
+			</data>
+			<key>hash2</key>
+			<data>
+			zqGcZuxd/zE+7y2NBVm+fGcbbKYcxLoFILLWw9v9neY=
 			</data>
 		</dict>
 		<key>www/cordova-js-src/exec.js</key>
@@ -856,11 +1006,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			t9Src9ulEtC5SVQ0VPykOgotomI=
+			sbQe/dsFi0XMNp4mEH9KPa0YWqo=
 			</data>
 			<key>hash2</key>
 			<data>
-			o3ZIwDvjX5bBNcM63RQYqYUUNtOHxylqX+ZlI5OP+2o=
+			A6XFGExDS1V7t/nifdvjrGM9jLIUSrqd9Ilu+kd+cJU=
 			</data>
 		</dict>
 		<key>www/img/logo.png</key>
@@ -922,22 +1072,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YSKFNbuEBwSmZMstKVbknulGxi0=
+			rSIobl0JAtT5Yxe/S4IjwBX+QFY=
 			</data>
 			<key>hash2</key>
 			<data>
-			yW/G+B0dsDrS1kTGlnlEm3quuJtGfZKftR6ei1mRZBQ=
+			YJO7jG2tgDJb6dKLZk35RbyYukoCi+PISkJWFloH4Tw=
 			</data>
 		</dict>
 		<key>www/js/checkAns.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rXK76fjvLRAfkY1yYy0oFVZdrWI=
+			Nq7PPz9rR5qNLQtQScMamvmmhOU=
 			</data>
 			<key>hash2</key>
 			<data>
-			hP4KRao6TCiFjDi/oMZFpf8rclRmYTdckAcEcd6Q+6U=
+			wmWfcTm50ut47oPRjV1Wor69kZ6zJeuHFzgPDYDg6Qo=
 			</data>
 		</dict>
 		<key>www/js/clock.js</key>
@@ -966,11 +1116,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QQmp63vCeBFzYthZXpiPQFUXqPM=
+			R1YgolQzbwGd0EKKLmQLGIumaXQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			NrPdfc16MOIXp8UiEyGY1ARdCpgawjUoQcUOrnNQ/gw=
+			L4OsUmDNE/N1Qp8c2Wq3bCZ6INlkPV85LT4EExNVHew=
 			</data>
 		</dict>
 		<key>www/js/index.js</key>
@@ -988,11 +1138,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0CaCOZ0AjvHhloF/8onF3Seqkl0=
+			kcjnEBfGPCLLErmedCHuD9vOvjc=
 			</data>
 			<key>hash2</key>
 			<data>
-			re+8ddymmVil2Ah/lIZf3stkDJYXNk7X8s9gnGpOxr0=
+			PqaFwkH0KNK97b3DaidGISC4ehO7ppNDYKvrNyffQGY=
 			</data>
 		</dict>
 		<key>www/js/orient.js</key>
@@ -1021,22 +1171,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			915tKVuk3YhHjnua8ARy5v+3PnU=
+			oCBs9XmroYzDAv2w0h0iyjntDEw=
 			</data>
 			<key>hash2</key>
 			<data>
-			HPqJHAHbci7VDYWlnTRvjmsecPdj+laKQGg/n3D/yT0=
+			Q+z/ElxuemK2k8lBr2SE/i3lEIU/ECQlHk1Yr5tzyvw=
 			</data>
 		</dict>
 		<key>www/js/showAns.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ek+HwW8DCYcSQELb9soFkCktGlY=
+			8iDlhv+w2kuGybX+l0NbhznzZxw=
 			</data>
 			<key>hash2</key>
 			<data>
-			hmpdhZtM1e+PbwP9bwz2oGwu1WZjEpMFp3gNJW5e2M8=
+			TSXpFmkSbhm70zN5RAVfhF/T3OmOxIDYaRUQAr15mPo=
 			</data>
 		</dict>
 		<key>www/js/solutionGen.js</key>

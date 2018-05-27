@@ -132,6 +132,6 @@ td {
     width: 98%;
 }
 
-#click {
+#clickAudio, #ansAudio, #loseAudio, #winAudio, #hintAudio {
     display: none;
 }

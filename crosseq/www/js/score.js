@@ -46,6 +46,7 @@ function clockScore() {
 }
 
 function gameOver() {
+    document.getElementById("loseAudio").play();
     $(".tableContainer2").css("visibility", "hidden");
     $(".youWin").css("visibility", "visible");
     $(".youWin").text("game over!");

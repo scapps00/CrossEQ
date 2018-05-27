@@ -10,6 +10,7 @@ var solutionArray = [];
 solution.forEach(placeInArray);
 
 function placeHint() {
+    document.getElementById("hintAudio").play();
     if (solutionArray.length > 0) {
         hintScore();
         var hintIndex = randomNum(0, solutionArray.length - 1);
