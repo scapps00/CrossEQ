@@ -14,20 +14,28 @@ function solutionGen() {
 
     function findMultTotal(divisor) {
         var multTally = [];
-        for (var i = divisor * 2; i < 81; i++) {
-            multTally.push(i);
+        if (divisor > 40) {
+            multTally.push(divisor);
+            for (var i = divisor * 2; i < 99; i++) {
+                multTally.push(i);
+            }
+            return findMultTotalInner(divisor, multTally);
+        } else {
+            for (var i = divisor * 2; i < 81; i++) {
+                multTally.push(i);
+            }
+            return findMultTotalInner(divisor, multTally);
         }
-        findMultTotalInner(divisor, multTally);
     }
 
-    function findMultTotalInner(divisor, multTally) {
-        var totalIndex = randomNum(0, multTally.length - 1);
-        var total = multTally[totalIndex];
-        multTally.splice(totalIndex, 1);
+    function findMultTotalInner(divisor, tally) {
+        var totalIndex = randomNum(0, tally.length - 1);
+        var total = tally[totalIndex];
+        tally.splice(totalIndex, 1);
         if (total % divisor === 0) {
             return total;
         } else {
-            return findMultTotalInner(divisor, multTally);
+            return findMultTotalInner(divisor, tally);
         }
     }
 
@@ -37,24 +45,24 @@ function solutionGen() {
             for (var i = 1; i < total + 1; i++) {
                 divTally.push(i);
             }
-            findDivisorInner(total);
+            return findDivisorInner(total, divTally);
         } else {
-            for (var i = 2; i < total / 2 + 1; i++) {
+            for (var i = 2; i < total + 1; i++) {
                 divTally.push(i);
             }
-            findDivisorInner(total, divTally);
+            return findDivisorInner(total, divTally);
         }
     }
 
 
-    function findDivisorInner(total, divTally) {
-        var divisorIndex = randomNum(0, divTally.length - 1);
-        var divisor = divTally[divisorIndex];
-        divTally.splice(divisorIndex, 1);
+    function findDivisorInner(total, tally) {
+        var divisorIndex = randomNum(0, tally.length - 1);
+        var divisor = tally[divisorIndex];
+        tally.splice(divisorIndex, 1);
         if (total % divisor === 0) {
             return divisor;
         } else {
-            return findDivisorInner(total, divTally);
+            return findDivisorInner(total, tally);
         }
     }
 
@@ -191,34 +199,47 @@ function solutionGen() {
         }
     }
 
+    var opTally = ops;
+
+    opTally.push(0);
+
+    function randomOpTally() {
+        var pick = randomNum(0, opTally.length - 2);
+        return opTally[pick];
+    }
+
     function solution5() {
-        if (solution[55] >= solution[53] && solution[44] <= solution[24] && solution[44] >= solution[24] && solution[53] + solution[55] >= 100 && solution[44] > solution[24] && solution[24] % solution[44] != 0 && solution[53] % solution[55] != 0 && solution[53] < solution[55] && solution[44] % solution[24] != 0 && solution [44] < solution[24] && solution[53] * solution[55] >= 100 && solution[64] * solution[44] >= 100) {
+        if (opTally.length == 1 || solution[55] >= solution[53] && solution[44] <= solution[24] && solution[44] >= solution[24] && solution[53] + solution[55] >= 100 && solution[44] > solution[24] && solution[24] % solution[44] != 0 && solution[53] * solution[55] >= 100 && solution[64] * solution[44] >= 100 && solution[53] % solution[55] != 0 && solution[53] < solution[55] && solution[44] % solution[24] != 0 && solution [44] < solution[24] && solution[53] * solution[55] >= 100 && solution[64] * solution[44] >= 100) {
             solutionGen();
         } else if (solution[54] === "-") {
             if (solution[55] >= solution[53] || solution[44] <= solution[24]) {
-                solution[54] = randomOp();
-                solutionGen();
+                opTally.splice(opTally.indexOf("-"), 1);
+                solution[54] = randomOpTally();
+                solution5();
             } else {
                 solution[51] = solution[53] - solution[55];
             }
         } else if (solution[54] === "+") {
             if (solution[44] >= solution[24] || solution[53] + solution[55] >= 100) {
-                solution[54] = randomOp();
-                solutionGen();     
+                opTally.splice(opTally.indexOf("+"), 1);
+                solution[54] = randomOpTally();
+                solution5();     
             } else {
                 solution[51] = solution[53] + solution[55];
             }
         } else if (solution[54] === "×") {
             if (solution[44] > solution[24] || solution[24] % solution[44] != 0 || solution[53] * solution[55] >= 100 || solution[64] * solution[44] >= 100) {
-                solution[54] = randomOp();
-                solutionGen();         
+                opTally.splice(opTally.indexOf("×"), 1);
+                solution[54] = randomOpTally();
+                solution5();         
             } else {
                 solution[51] = solution[53] * solution[55];
             }
         } else if (solution[54] === "÷") {
             if (solution[53] % solution[55] != 0 || solution[53] < solution[55] || solution[44] % solution[24] != 0 || solution [44] < solution[24]) {
-                solution[54] = randomOp();
-                solutionGen();        
+                opTally.splice(opTally.indexOf("÷"), 1);
+                solution[54] = randomOpTally();
+                solution5();        
             } else {
                 solution[51] = solution[53] / solution[55];
             }
