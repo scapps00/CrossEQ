@@ -10,13 +10,19 @@ function assignClick() {
             event2.preventDefault();
             moveScore();
             $(event2.target).text($(".selected").text());
+            var selectedClass = $(".selected").attr("class").split(" ");
+            choicesArray[choicesArray.indexOf(parseInt(selectedClass[0]))] = $(event2.target).attr("class");
             $(".selected").text("");
             $(".selected").css("background-color", "#ebebeb");
             $(".selected").removeClass(".selected");
-            $("td").unbind();
+            $("td:not(.hint):not(.countdown):not(.score):not(.answer)").unbind();
             checkAns();
             assignClick();
         });
     });
+}
+
+function convertForCA(index) {
+    return index.charAt(0).toString() + index.charAt(2).toString() + "0";
 }
 

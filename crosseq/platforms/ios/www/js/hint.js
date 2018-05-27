@@ -17,17 +17,25 @@ function placeHint() {
         var transfer = $("[class=" + classOfHint + "]").text();
         $("[class=" + classOfHint + "]").text(solutionArray[hintIndex].num);
         $("[class=" + classOfHint + "]").addClass("static");
-        $("[class='" + choicesArray[solutionArray[hintIndex].ind] + "']").text("");
-        solutionArray.splice(hintIndex, 1);
+        console.log(choicesArray);
+        console.log(choicesArray[solutionArray[hintIndex].ind]);
+        if (choicesArray[solutionArray[hintIndex].ind].toString().length <= 2) {
+           $("[class='" + choicesArray[solutionArray[hintIndex].ind] + "']").text("");
+        } else {
+            $("[class=" + choicesArray[solutionArray[hintIndex].ind] + "]").text("");
+        }
+        choicesArray[solutionArray[hintIndex].ind] = classOfHint;
         if (transfer != "") {
             for (var i = 1; i < 21; i++) {
                 if ($("[class='" + i + "']").text() == "") {
                     $("[class='" + i + "']").text(transfer);
-                    choicesArray[solutionArray[hintIndex].ind] = i;
+                    choicesArray[choicesArray.indexOf(classOfHint)] = i;
+                    solutionArray.splice(hintIndex, 1);
                     return;
                 }
             }
         }
+        solutionArray.splice(hintIndex, 1);
     }
 }
 
@@ -39,16 +47,17 @@ function placeHintAns() {
         $("[class=" + classOfHint + "]").text(solutionArray[hintIndex].num);
         $("[class=" + classOfHint + "]").addClass("static");
         $("[class='" + choicesArray[solutionArray[hintIndex].ind] + "']").text("");
-        solutionArray.splice(hintIndex, 1);
+        choicesArray[solutionArray[hintIndex].ind] = classOfHint;
         if (transfer != "") {
             for (var i = 1; i < 21; i++) {
                 if ($("[class='" + i + "']").text() == "") {
                     $("[class='" + i + "']").text(transfer);
-                    choicesArray[solutionArray[hintIndex].ind] = i;
+                    choicesArray[choicesArray.indexOf(classOfHint)] = i;
                     return;
                 }
             }
         }
+        solutionArray.splice(hintIndex, 1);
     }
 }
 
