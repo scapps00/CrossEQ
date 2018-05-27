@@ -131,3 +131,7 @@ td {
     text-align: center;
     width: 98%;
 }
+
+#click {
+    display: none;
+}
