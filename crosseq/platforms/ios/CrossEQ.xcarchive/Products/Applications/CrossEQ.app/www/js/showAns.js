@@ -1,7 +1,7 @@
 $(".answer").click(function() {
     clearInterval(clock);
     while (solutionArray.length > 0) {
-        placeHint();
+        placeHintAns();
     }
     $(".tableContainer2").css("visibility", "hidden");
     $(".youWin").css("visibility", "visible");

@@ -86,11 +86,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		tFvaCRCq6I3b2+IZJDcMSTIWc0c=
+		SUjlr88Mg8ag7gGDRAkDH3vqMHc=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		c4ZJKCNd0164raj+CqRvsmNlqlI=
+		F8RI1kGagdBOx9WvoM2cr1AONxg=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -98,11 +98,11 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		psXs1K28QHBRWfTyl5rLOoiVwyg=
+		ofbGi4d3ZR1UUmkK5ksL6BFjxvE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QygNBhQrQeFRA4/Q8Gt0ZOTv5dw=
+		expz3wFesmVx/nkIPLuw0AkbYec=
 		</data>
 		<key>LaunchImage-568h@2x.png</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		c/H4Ky/UdLFvxqDncKFjViWwYSM=
+		JiVRWqsktoqV9gH0p/J8hHgzjS4=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -250,7 +250,7 @@
 		</data>
 		<key>www/js/hint.js</key>
 		<data>
-		+hIw7z0v5wGh0/u9NsJ/Cvx/z98=
+		bMLF9GBdAQVyhPTf+yuok2ECHKs=
 		</data>
 		<key>www/js/index.js</key>
 		<data>
@@ -266,15 +266,15 @@
 		</data>
 		<key>www/js/reset.js</key>
 		<data>
-		icsiSZs11XfIALDL2UKwUIvYa3I=
+		slINyflezRVK+2xjVEBpWMgJ204=
 		</data>
 		<key>www/js/score.js</key>
 		<data>
-		vY2IFliY1xsnoq9NUmdhR1SHGmQ=
+		ztLDBxU6zcwu6YvgzNwl57/pjQE=
 		</data>
 		<key>www/js/showAns.js</key>
 		<data>
-		jn+4Fwm75PIUwlvls4flPD9+pcc=
+		Ek+HwW8DCYcSQELb9soFkCktGlY=
 		</data>
 		<key>www/js/solutionGen.js</key>
 		<data>
@@ -507,22 +507,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tFvaCRCq6I3b2+IZJDcMSTIWc0c=
+			SUjlr88Mg8ag7gGDRAkDH3vqMHc=
 			</data>
 			<key>hash2</key>
 			<data>
-			dkxoUl3W6TQ7knBvs+SM/3MySOggsC/FSIBJO09aSsY=
+			UvIt43fayj5l+pafNrMsCRVizZAJyT2IG8+CetyocxA=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			c4ZJKCNd0164raj+CqRvsmNlqlI=
+			F8RI1kGagdBOx9WvoM2cr1AONxg=
 			</data>
 			<key>hash2</key>
 			<data>
-			UCD07JrVwsUsQEPN683EfFS6tbmFpEls/1qXHjdNu+k=
+			WhsyfrcqRgWQtVFYh7Hpmc88QYZ3/Dh+ehFhmUL1oOs=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -540,11 +540,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			psXs1K28QHBRWfTyl5rLOoiVwyg=
+			ofbGi4d3ZR1UUmkK5ksL6BFjxvE=
 			</data>
 			<key>hash2</key>
 			<data>
-			8sSPVqpi5CBiyr6oxGyo0kPSOIYVLuuSwZ3vKZuCTbs=
+			ouIqwE+4q/D+t//OB8aC/8hLKsxHSsSVHPxXODL6Ht8=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -727,11 +727,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c/H4Ky/UdLFvxqDncKFjViWwYSM=
+			JiVRWqsktoqV9gH0p/J8hHgzjS4=
 			</data>
 			<key>hash2</key>
 			<data>
-			3KQyAEBnIfgS6+rGfw3nJ6moJRUOWWtCMaZcTnRU8/c=
+			7VcD3sms9a3LWtcb5rR2uovQ/rnXqLQ6wWZ/UhFHYpI=
 			</data>
 		</dict>
 		<key>config.xml</key>
@@ -936,11 +936,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+hIw7z0v5wGh0/u9NsJ/Cvx/z98=
+			bMLF9GBdAQVyhPTf+yuok2ECHKs=
 			</data>
 			<key>hash2</key>
 			<data>
-			GkEerYKmYoqJrJrRj+p0F1HOyKUba5XBr/CHO6cMy9Y=
+			wuAjIFQfiR6wXyz+hDJo1zcCIljb7a8iZwmp1T/xYu8=
 			</data>
 		</dict>
 		<key>www/js/index.js</key>
@@ -980,33 +980,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			icsiSZs11XfIALDL2UKwUIvYa3I=
+			slINyflezRVK+2xjVEBpWMgJ204=
 			</data>
 			<key>hash2</key>
 			<data>
-			VkGYzqlPVXA2d60VYWl+te6gPMcVrSfpjXWbAwRsDEw=
+			XLI4/aiHKXxER9fswQaLzs6i8fjCS9xMrUvfGzwi6OI=
 			</data>
 		</dict>
 		<key>www/js/score.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vY2IFliY1xsnoq9NUmdhR1SHGmQ=
+			ztLDBxU6zcwu6YvgzNwl57/pjQE=
 			</data>
 			<key>hash2</key>
 			<data>
-			yJ5z/BRAW0Tq1PlZsY4spTYQOxV9awWP4OVHBc9NWi0=
+			/s4nzVyKEns0iJQ63K483Gad/WY7xB6gx3z73DGFEmo=
 			</data>
 		</dict>
 		<key>www/js/showAns.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jn+4Fwm75PIUwlvls4flPD9+pcc=
+			Ek+HwW8DCYcSQELb9soFkCktGlY=
 			</data>
 			<key>hash2</key>
 			<data>
-			cd6ICFGLzs+5gGWZoKw9Wj1kd7y4ozVfPAl1xqsBXyE=
+			hmpdhZtM1e+PbwP9bwz2oGwu1WZjEpMFp3gNJW5e2M8=
 			</data>
 		</dict>
 		<key>www/js/solutionGen.js</key>

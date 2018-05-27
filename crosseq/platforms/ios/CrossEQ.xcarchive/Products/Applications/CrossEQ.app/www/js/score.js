@@ -1,6 +1,9 @@
+var hintTracker = [];
+
 function hintScore() {
-    if (parseInt($(".score").text()) + 75 < 999) {
-        $(".score").text(parseInt($(".score").text()) + 75);
+    hintTracker.push(1);
+    if (parseInt($(".score").text()) + (hintTracker.length * 15) < 999) {
+        $(".score").text(parseInt($(".score").text()) + (hintTracker.length * 15));
     } else {
         $(".score").text("999");
         gameOver();
@@ -8,8 +11,8 @@ function hintScore() {
 }
 
 function moveScore() {
-    if (parseInt($(".score").text()) + 15 < 999) {
-        $(".score").text(parseInt($(".score").text()) + 15);
+    if (parseInt($(".score").text()) + 5 < 999) {
+        $(".score").text(parseInt($(".score").text()) + 5);
     } else {
         $(".score").text("999");
         gameOver();
