@@ -9,21 +9,14 @@ solutionArray = [];
 
 solution.forEach(placeInArray);
 
-var stopHint = [];
-
 function placeHint() {
-    var hintIndex = randomNum(0, 19);
-    if (solutionArray[hintIndex] != "") {
-        stopHint.push(hintIndex);
+    if (solutionArray.length > 0) {
+        var hintIndex = randomNum(0, solutionArray.length - 1);
         var classOfHint = indexToClass(solutionArray[hintIndex].ind);
         $("[class=" + classOfHint + "]").text(solutionArray[hintIndex].num);
         $("[class=" + classOfHint + "]").addClass("static");
         $("[class='" + choicesArray[solutionArray[hintIndex].ind] + "']").text("");
-        solutionArray[hintIndex] = "";
-    } else if (stopHint.length == 20) {
-        return
-    } else {
-        placeHint();
+        solutionArray.splice(hintIndex, 1);
     }
 }
 

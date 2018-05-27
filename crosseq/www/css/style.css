@@ -118,8 +118,8 @@ td {
     background-color: #424242;
 }
 
-.static {
-    background-color: #85cfa3;
+.static, .equal {
+    background-color: #94b4a1;
 }
 
 .youWin {

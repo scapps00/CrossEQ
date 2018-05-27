@@ -1,9 +1,12 @@
 var solution = [];
 
+function randomNum(min, max) {
+    return (min + Math.floor(Math.random() * ((max + 1) - min)));
+}
+
+var choicesArray = [];
+
 function solutionGen() {
-    function randomNum(min, max) {
-        return (min + Math.floor(Math.random() * ((max + 1) - min)));
-    }
 
     var ops = ["+", "-", "×", "÷"];
     //var ops = ["×", "÷"];
@@ -266,8 +269,6 @@ function solutionGen() {
     solution15();
     solution5();
     solution64();
-
-    var choicesArray = [];
 
     var placeArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 

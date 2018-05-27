@@ -86,11 +86,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		/RuEfZ8nPLHKJkM5eutlcVHi83k=
+		LUXF2DxwznQwIwW+XfoSFIzlhLs=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		ZfsIW1RVELOx2t6suoHH9YTfZtk=
+		wBa+z3m5Kd1O/Kgu9zNlhmJ6DA0=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		e4aQ6XxCrOPSICOYauhZDPbY8h4=
+		v6VRl1VNn4+1L60268ZSEFnY2aw=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		r+nZRlM1QNauWdNU6+G7xb/QCRI=
+		0g/DWC6eiRDEHQTrlQMqXTW6Als=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -210,7 +210,7 @@
 		</data>
 		<key>www/css/style.css</key>
 		<data>
-		FVVvEZnGST4O4lWB1At/B8eBb5c=
+		vTFnj0BzIbhtxqNo/x4rRirY+c8=
 		</data>
 		<key>www/img/logo.png</key>
 		<data>
@@ -234,7 +234,7 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		3/9ZyXzdhIFukJiVPt3sVHwaQko=
+		Rt5HL2AhV+jbLZFhzxsfq3XNIZc=
 		</data>
 		<key>www/js/checkAns.js</key>
 		<data>
@@ -250,7 +250,7 @@
 		</data>
 		<key>www/js/hint.js</key>
 		<data>
-		zSAY3OWjfSqbBwgn4X2I6ILIBUk=
+		zy9mVVkhVrmJyM0StQSGtUDw7pc=
 		</data>
 		<key>www/js/index.js</key>
 		<data>
@@ -258,15 +258,19 @@
 		</data>
 		<key>www/js/moveNum.js</key>
 		<data>
-		/WeOM4L++cg8TtzvAsqIyveiOQU=
+		Ia/X0NrVoOWldc2itNsnTfKnAoM=
 		</data>
 		<key>www/js/orient.js</key>
 		<data>
 		cDAOh/2a7/N46FTfjsqu/osjvnw=
 		</data>
+		<key>www/js/showAns.js</key>
+		<data>
+		5goPWZ7ajQd79/eOSb9slfxImwc=
+		</data>
 		<key>www/js/solutionGen.js</key>
 		<data>
-		OdiS8wpDLaHGqUiQe7vejxJ0xTw=
+		jSE2vs8lvtCVxJhrD4pDHT25pEo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -495,22 +499,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/RuEfZ8nPLHKJkM5eutlcVHi83k=
+			LUXF2DxwznQwIwW+XfoSFIzlhLs=
 			</data>
 			<key>hash2</key>
 			<data>
-			CUNRkbyeneqL1FoIZJhxc52NO3HSkYMUARU5cnJkOBE=
+			1JDZDuUVGEYybyLF7QWxYsoI7PDz1/WCpms0T+IOzpI=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZfsIW1RVELOx2t6suoHH9YTfZtk=
+			wBa+z3m5Kd1O/Kgu9zNlhmJ6DA0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ew+C6fa7tflqqyoD+KYgRAp5UdPalqhGVSDhQXLv6wI=
+			aJRKTGgdTcjDusk1V4AwLYmFV39r3xaH4V9nR5PxAGo=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -528,11 +532,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e4aQ6XxCrOPSICOYauhZDPbY8h4=
+			v6VRl1VNn4+1L60268ZSEFnY2aw=
 			</data>
 			<key>hash2</key>
 			<data>
-			/w0+SxVUR9Om8nNF7J36vMxpGp/GUlSFIhCDfeS23ls=
+			yXsn+SfJtqW3xhqRaw1fRBR+xJr4ZxFUGiEqtTqX9J8=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -715,11 +719,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			r+nZRlM1QNauWdNU6+G7xb/QCRI=
+			0g/DWC6eiRDEHQTrlQMqXTW6Als=
 			</data>
 			<key>hash2</key>
 			<data>
-			lazte/ZOtvdJxwqRscYGFiKGWJKfR7pRfJncubyrPRQ=
+			R/8Ls+JmZisXK3xCdbRXsL7HzZxfpcVPbEEOUbEDHZU=
 			</data>
 		</dict>
 		<key>config.xml</key>
@@ -814,11 +818,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FVVvEZnGST4O4lWB1At/B8eBb5c=
+			vTFnj0BzIbhtxqNo/x4rRirY+c8=
 			</data>
 			<key>hash2</key>
 			<data>
-			YMpOvegreZOBzDjBEdfSy2j6E3H8XjQFP7gv26eTcc0=
+			5O3aRKp1Y2CCw/+LZSJOuf+V/JM/ns6J+yUSrNaqEgQ=
 			</data>
 		</dict>
 		<key>www/img/logo.png</key>
@@ -880,11 +884,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3/9ZyXzdhIFukJiVPt3sVHwaQko=
+			Rt5HL2AhV+jbLZFhzxsfq3XNIZc=
 			</data>
 			<key>hash2</key>
 			<data>
-			40ktvPlV59OrunnXCMKEoZ7bOZCwtGvtgz3BisbkcQU=
+			w+etkZTbiKu2/HugBduRUfFjxG7FhOmjaP1TlqG8k8k=
 			</data>
 		</dict>
 		<key>www/js/checkAns.js</key>
@@ -924,11 +928,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zSAY3OWjfSqbBwgn4X2I6ILIBUk=
+			zy9mVVkhVrmJyM0StQSGtUDw7pc=
 			</data>
 			<key>hash2</key>
 			<data>
-			tKFqF54GBRZ2G+/rAhqKbStKrwOUdOiiGlGc1LeuZVc=
+			LXSusbcLwTFzBWh7cT48plKg0xmIhnYB8Bc92qXQDXs=
 			</data>
 		</dict>
 		<key>www/js/index.js</key>
@@ -946,11 +950,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/WeOM4L++cg8TtzvAsqIyveiOQU=
+			Ia/X0NrVoOWldc2itNsnTfKnAoM=
 			</data>
 			<key>hash2</key>
 			<data>
-			I9gCPoVbI798JvLmYVQ/Zw09mt+DFFqjxgDGjI+R8hI=
+			Crv/ihouju0lPgdiuzpXJ7u2yyLfyZ4AOR9Bgnf5sQ0=
 			</data>
 		</dict>
 		<key>www/js/orient.js</key>
@@ -964,15 +968,26 @@
 			2C2D2MdB0nSzmKGqHJ5/sU1u6KyO6p2jwgwXtigvUns=
 			</data>
 		</dict>
+		<key>www/js/showAns.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5goPWZ7ajQd79/eOSb9slfxImwc=
+			</data>
+			<key>hash2</key>
+			<data>
+			sHhlprs2ZklLeAnBJBi2CWTAVRVB6XSW8iR7wlE5+Lc=
+			</data>
+		</dict>
 		<key>www/js/solutionGen.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OdiS8wpDLaHGqUiQe7vejxJ0xTw=
+			jSE2vs8lvtCVxJhrD4pDHT25pEo=
 			</data>
 			<key>hash2</key>
 			<data>
-			8oeSISpDSOYhKnHXjuWj+0h3LbY6YZohc8d5fpzpb+k=
+			gVxkIE8mG47iwFdfeJAYOrc/ey0snhFVJVlq0hZyKp4=
 			</data>
 		</dict>
 	</dict>
