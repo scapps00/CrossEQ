@@ -8,6 +8,7 @@ function assignClick() {
         $(".selected").css("background-color", "#ecbc76");
         $("td:empty:not(.blank)").click(function(event2) {
             event2.preventDefault();
+            moveScore();
             $(event2.target).text($(".selected").text());
             $(".selected").text("");
             $(".selected").css("background-color", "#ebebeb");

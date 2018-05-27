@@ -5,12 +5,13 @@ function placeInArray(item, index) {
     });
 }
 
-solutionArray = [];
+var solutionArray = [];
 
 solution.forEach(placeInArray);
 
 function placeHint() {
     if (solutionArray.length > 0) {
+        hintScore();
         var hintIndex = randomNum(0, solutionArray.length - 1);
         var classOfHint = indexToClass(solutionArray[hintIndex].ind);
         $("[class=" + classOfHint + "]").text(solutionArray[hintIndex].num);

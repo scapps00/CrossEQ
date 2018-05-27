@@ -46,4 +46,9 @@ function youWon() {
     $(".tableContainer2").css("visibility", "hidden");
     $(".youWin").css("visibility", "visible");
     $(".youWin").text("you win!");
+    $("*").unbind();
+    $(".youWin").append("<div class='reset'>play again</div>");
+    $(".reset").click(function() {
+        reset();
+    });
 }

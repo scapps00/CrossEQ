@@ -119,15 +119,15 @@ td {
 }
 
 .static, .equal {
-    background-color: #94b4a1;
+    background-color: #859dcf;
 }
 
 .youWin {
     visibility: hidden;
     color: #424242;
-    font-size: 65px;
+    font-size: 50px;
     position: absolute;
-    top: 70%;
+    top: 60%;
     text-align: center;
     width: 98%;
 }
