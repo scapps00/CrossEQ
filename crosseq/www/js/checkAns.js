@@ -45,5 +45,5 @@ function eval(first, operator, second, result) {
 function youWon() {
     $(".tableContainer2").css("visibility", "hidden");
     $(".youWin").css("visibility", "visible");
-    $(".youWin").text("YOU WON!");
+    $(".youWin").text("you win!");
 }
