@@ -125,9 +125,9 @@ td {
 .youWin {
     visibility: hidden;
     color: #424242;
-    font-size: 50px;
+    font-size: 40px;
     position: absolute;
-    top: 60%;
+    top: 65%;
     text-align: center;
     width: 98%;
 }
