@@ -67,8 +67,7 @@ function placeHint(exceptionArray) {
                     $("[class=" + movedFrom + "]").text(movedFromVal);
                     var whereFound = choicesArray[found];
                     var altSolution = solution;
-                    altSolution[solutionMinusExArray[hintIndex].ind] = "nein";
-                    choicesArray[found] = movedFrom;
+                    altSolution[indexToClass(hintIndex)] = "nein";
 
                     function checkAgain() {
                         console.log(found + " 1");
@@ -82,31 +81,12 @@ function placeHint(exceptionArray) {
                             console.log($("[class=" + whereFound + "]").text())
                             var compare = $("[class=" + whereFound + "]").text();
                         }
-                        if (solution[found] == compare) {
+                            if (solution[found] == compare) {
                             console.log(5);
                             altSolution[found] = "nein";
                             console.log(altSolution);
-                            if (movedFromVal != "+" && movedFromVal != "-" && movedFromVal != "×" && movedFromVal != "÷") {
-                                found = altSolution.indexOf(parseInt(movedFromVal));
-                                console.log("no");
-                            } else {
-                                console.log("hey");
-                                found = altSolution.indexOf(movedFromVal);
-                                console.log(found);
-                            }
-                            var oldWhereFound = whereFound;
-                            console.log(choicesArray);
+                            found = altSolution.indexOf(movedFromVal);
                             whereFound = choicesArray[found];
-                            choicesArray[found] = oldWhereFound;
-                            console.log(3);
-                            console.log(whereFound);
-                            if (whereFound.toString().length <= 2) {
-                                console.log(1);
-                                $("[class='" + whereFound + "']").text("");
-                            } else {
-                                console.log(2);
-                                $("[class=" + whereFound + "]").text("");
-                            }
                             console.log(found);
                             console.log(whereFound);
                             checkAgain(); 
@@ -114,6 +94,16 @@ function placeHint(exceptionArray) {
                     }
 
                     checkAgain();
+                    choicesArray[found] = movedFrom;
+                    console.log(3);
+                    console.log(whereFound);
+                    if (whereFound.toString().length <= 2) {
+                        console.log(1);
+                        $("[class='" + whereFound + "']").text("");
+                    } else {
+                        console.log(2);
+                        $("[class=" + whereFound + "]").text("");
+                    }
                 }
             }
             solutionArray.splice(solutionArray.indexOf(solutionMinusExArray[hintIndex]), 1); 

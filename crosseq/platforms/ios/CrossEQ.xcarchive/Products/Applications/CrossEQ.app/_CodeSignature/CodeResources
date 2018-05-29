@@ -102,11 +102,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		Pyigqf9+JgjRVkIt3y2YRkNuYeM=
+		lPw/c7zOiqtm/NQ7P/FN4dQd1xk=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		/IMmxd3l6T1l71HajyxF+BgpGaA=
+		+vJuJgPvE/GInLWnB5CCjTiDjlA=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		fZD3wxesFZp+ksPO4M7CmK9XFn0=
+		pR074tacijGCun3Lwvu37+FlUPU=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		MvpPvdmcPi1hgTkgX+w/pvsrL5A=
+		QMvF+YHs5cfuzpjAzV9EGOItmzE=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -147,6 +147,70 @@
 		<key>www/audio/Click/Click.wav</key>
 		<data>
 		MYr3+DpRBfPiD3X0NUe6X1E+Z5Q=
+		</data>
+		<key>www/audio/Numbers.htm</key>
+		<data>
+		CEbFf6s32wLLvOvq0Ece5CmKV7Y=
+		</data>
+		<key>www/audio/Numbers_files/checkAns.js</key>
+		<data>
+		Embvu3l+Ja4Z5d0egVAC4t2Qexo=
+		</data>
+		<key>www/audio/Numbers_files/clock.js</key>
+		<data>
+		+a477NzcB6EReo6q7/rEGvcpT1c=
+		</data>
+		<key>www/audio/Numbers_files/cordova.js</key>
+		<data>
+		mRBmn18RIpXa4ii5aHmEaH1ikcg=
+		</data>
+		<key>www/audio/Numbers_files/cordova_plugins.js</key>
+		<data>
+		oJvrNfDjC7exidBFRVVYpDm4akE=
+		</data>
+		<key>www/audio/Numbers_files/css</key>
+		<data>
+		Cfxu6YVaaRheIzePsQYg/6IaCFk=
+		</data>
+		<key>www/audio/Numbers_files/format.js</key>
+		<data>
+		3gFM/bdPKu54wzdw14d2g+E2du4=
+		</data>
+		<key>www/audio/Numbers_files/hint.js</key>
+		<data>
+		2033ZiV2Ok3phVEp1NZGIJdcGlY=
+		</data>
+		<key>www/audio/Numbers_files/jquery.min.js</key>
+		<data>
+		EFUBjCirQQh++czv5BFgaJPavqI=
+		</data>
+		<key>www/audio/Numbers_files/moveNum.js</key>
+		<data>
+		Vc1aSd8hg2KEk2A8d58CKqbU+s4=
+		</data>
+		<key>www/audio/Numbers_files/ready.html</key>
+		<data>
+		CjSMS2HJYaunYY+Qm+uH90CoGYM=
+		</data>
+		<key>www/audio/Numbers_files/reset.js</key>
+		<data>
+		slINyflezRVK+2xjVEBpWMgJ204=
+		</data>
+		<key>www/audio/Numbers_files/score.js</key>
+		<data>
+		oCBs9XmroYzDAv2w0h0iyjntDEw=
+		</data>
+		<key>www/audio/Numbers_files/showAns.js</key>
+		<data>
+		8iDlhv+w2kuGybX+l0NbhznzZxw=
+		</data>
+		<key>www/audio/Numbers_files/solutionGen.js</key>
+		<data>
+		OIv4uuf7vsAtIhjwWXsNiPGcKcA=
+		</data>
+		<key>www/audio/Numbers_files/style.css</key>
+		<data>
+		fOJ6Oo64JOiEfm/fcWqgW2y3Kd0=
 		</data>
 		<key>www/audio/ans/Sound Electronic Move.mp3</key>
 		<data>
@@ -258,7 +322,7 @@
 		</data>
 		<key>www/js/hint.js</key>
 		<data>
-		2cIVS+fdpQzk2imcjTcnTfu+Xxc=
+		wvLJt8QwTQLqvp7OcgDLy1GaxEs=
 		</data>
 		<key>www/js/index.js</key>
 		<data>
@@ -559,22 +623,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Pyigqf9+JgjRVkIt3y2YRkNuYeM=
+			lPw/c7zOiqtm/NQ7P/FN4dQd1xk=
 			</data>
 			<key>hash2</key>
 			<data>
-			GnVacav6FlddonlckQxuEe8F5ep5+qFAsBB54zmxoj8=
+			2GYdeP31JcAQNOC7Rrvyj0Uqaka0x8gAmp1YbB/b1yw=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/IMmxd3l6T1l71HajyxF+BgpGaA=
+			+vJuJgPvE/GInLWnB5CCjTiDjlA=
 			</data>
 			<key>hash2</key>
 			<data>
-			I4xo5ccuXdW9GK4SlRV+GniD9kAIZNmKtTdNjl/NWfA=
+			rQt9vcVc+X27P4hfeJG8Cx235WPV9D7ULonOuwtKtbI=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -592,11 +656,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fZD3wxesFZp+ksPO4M7CmK9XFn0=
+			pR074tacijGCun3Lwvu37+FlUPU=
 			</data>
 			<key>hash2</key>
 			<data>
-			Pkm+dGpWhUv1ZdYSelg6Iy2l7nqgSBPK5/GNjerC4AI=
+			K3QFwWJZwMBR0f/Go5KauSJMHnmCMySScM1CM17Qn6A=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -625,11 +689,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MvpPvdmcPi1hgTkgX+w/pvsrL5A=
+			QMvF+YHs5cfuzpjAzV9EGOItmzE=
 			</data>
 			<key>hash2</key>
 			<data>
-			P8hELd1Sn5IxwL6lbOERSPKnjrphSuj9EJT2PKHYDu4=
+			JgXRZrERE3cS/nyydXkuKGEvHz6ZKK/QAGWFBjojJw0=
 			</data>
 		</dict>
 		<key>config.xml</key>
@@ -663,6 +727,182 @@
 			<key>hash2</key>
 			<data>
 			EpnCVEas203mtObTDH/YxOpD6Kr/VODagOHJIni4Duk=
+			</data>
+		</dict>
+		<key>www/audio/Numbers.htm</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CEbFf6s32wLLvOvq0Ece5CmKV7Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			kXosyoP2MiuWFi6IdWWyL2q7jb09ax/Te9M3s03Jaac=
+			</data>
+		</dict>
+		<key>www/audio/Numbers_files/checkAns.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Embvu3l+Ja4Z5d0egVAC4t2Qexo=
+			</data>
+			<key>hash2</key>
+			<data>
+			qRCHxt1DDL9OKByleA6P4piUKJwqgrigQuKDvxmQiMM=
+			</data>
+		</dict>
+		<key>www/audio/Numbers_files/clock.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+a477NzcB6EReo6q7/rEGvcpT1c=
+			</data>
+			<key>hash2</key>
+			<data>
+			gHB/xGVaWAhPR28kUqZU1Tx53Qwth8XTr71MYT2vkS8=
+			</data>
+		</dict>
+		<key>www/audio/Numbers_files/cordova.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mRBmn18RIpXa4ii5aHmEaH1ikcg=
+			</data>
+			<key>hash2</key>
+			<data>
+			HjItFyyzb+ote+uQxIK8Q3/gmdL/mreIkA84qe4DTLI=
+			</data>
+		</dict>
+		<key>www/audio/Numbers_files/cordova_plugins.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oJvrNfDjC7exidBFRVVYpDm4akE=
+			</data>
+			<key>hash2</key>
+			<data>
+			k6baAz4bpYLmsYUf6NQA8+2skKyjBM8NwEPZpd79pcI=
+			</data>
+		</dict>
+		<key>www/audio/Numbers_files/css</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Cfxu6YVaaRheIzePsQYg/6IaCFk=
+			</data>
+			<key>hash2</key>
+			<data>
+			oMEUsYHpSblpAoTGCkjH4Hbxq/UT1tqueMZvLOUOQ38=
+			</data>
+		</dict>
+		<key>www/audio/Numbers_files/format.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3gFM/bdPKu54wzdw14d2g+E2du4=
+			</data>
+			<key>hash2</key>
+			<data>
+			d37/E3uYs/tHyNwxm9zUB4y1wrT6fr6EK/bRhppNPok=
+			</data>
+		</dict>
+		<key>www/audio/Numbers_files/hint.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2033ZiV2Ok3phVEp1NZGIJdcGlY=
+			</data>
+			<key>hash2</key>
+			<data>
+			JLH/Z60Nsse5cERGnT8Ftb6rQfSam9mylcGssKcvESY=
+			</data>
+		</dict>
+		<key>www/audio/Numbers_files/jquery.min.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EFUBjCirQQh++czv5BFgaJPavqI=
+			</data>
+			<key>hash2</key>
+			<data>
+			hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=
+			</data>
+		</dict>
+		<key>www/audio/Numbers_files/moveNum.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vc1aSd8hg2KEk2A8d58CKqbU+s4=
+			</data>
+			<key>hash2</key>
+			<data>
+			fNSispHleqjlIpUAktUUymsib/sRGj1LnSmAvMkD9v4=
+			</data>
+		</dict>
+		<key>www/audio/Numbers_files/ready.html</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CjSMS2HJYaunYY+Qm+uH90CoGYM=
+			</data>
+			<key>hash2</key>
+			<data>
+			l/mxADmwXhr0o8m3ePxyukTPaKN25OwdVfJVjxbPPlA=
+			</data>
+		</dict>
+		<key>www/audio/Numbers_files/reset.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			slINyflezRVK+2xjVEBpWMgJ204=
+			</data>
+			<key>hash2</key>
+			<data>
+			XLI4/aiHKXxER9fswQaLzs6i8fjCS9xMrUvfGzwi6OI=
+			</data>
+		</dict>
+		<key>www/audio/Numbers_files/score.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oCBs9XmroYzDAv2w0h0iyjntDEw=
+			</data>
+			<key>hash2</key>
+			<data>
+			Q+z/ElxuemK2k8lBr2SE/i3lEIU/ECQlHk1Yr5tzyvw=
+			</data>
+		</dict>
+		<key>www/audio/Numbers_files/showAns.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8iDlhv+w2kuGybX+l0NbhznzZxw=
+			</data>
+			<key>hash2</key>
+			<data>
+			TSXpFmkSbhm70zN5RAVfhF/T3OmOxIDYaRUQAr15mPo=
+			</data>
+		</dict>
+		<key>www/audio/Numbers_files/solutionGen.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OIv4uuf7vsAtIhjwWXsNiPGcKcA=
+			</data>
+			<key>hash2</key>
+			<data>
+			8bBdamN0MOiyXbLBgex21Pj1UnJYYXCJixqis3pPGWI=
+			</data>
+		</dict>
+		<key>www/audio/Numbers_files/style.css</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fOJ6Oo64JOiEfm/fcWqgW2y3Kd0=
+			</data>
+			<key>hash2</key>
+			<data>
+			yC06y1yOd3seIldr291O3CBO2/9EG1JLc0ZCd+giRXk=
 			</data>
 		</dict>
 		<key>www/audio/ans/Sound Electronic Move.mp3</key>
@@ -966,11 +1206,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2cIVS+fdpQzk2imcjTcnTfu+Xxc=
+			wvLJt8QwTQLqvp7OcgDLy1GaxEs=
 			</data>
 			<key>hash2</key>
 			<data>
-			YUIsc7BHnoBaqPsJdQ8bo6v/4oRVPUwv/pGSskHZMM0=
+			32hV0NVGqocmw5MgLR9G8wPU0c4NQvik90ik2KWCJuc=
 			</data>
 		</dict>
 		<key>www/js/index.js</key>
