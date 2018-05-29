@@ -10,16 +10,20 @@ var solutionArray = [];
 solution.forEach(placeInArray);
 
 function placeHint() {
+    document.getElementById("hintAudio").pause();
+    document.getElementById("hintAudio").load()
     document.getElementById("hintAudio").play();
     if (solutionArray.length > 0) {
-        hintScore();
+        //hintScore();
         var hintIndex = randomNum(0, solutionArray.length - 1);
+        if ($("[class='" + choicesArray[solutionArray[hintIndex].ind] + " selected']").attr("class") != undefined) {
+            $(".selected").css("background-color", "#ebebeb");
+            $(".selected").removeClass("selected");
+        }
         var classOfHint = indexToClass(solutionArray[hintIndex].ind);
         var transfer = $("[class=" + classOfHint + "]").text();
         $("[class=" + classOfHint + "]").text(solutionArray[hintIndex].num);
         $("[class=" + classOfHint + "]").addClass("static");
-        console.log(choicesArray);
-        console.log(choicesArray[solutionArray[hintIndex].ind]);
         if (choicesArray[solutionArray[hintIndex].ind].toString().length <= 2) {
            $("[class='" + choicesArray[solutionArray[hintIndex].ind] + "']").text("");
         } else {
@@ -31,18 +35,21 @@ function placeHint() {
                 if ($("[class='" + i + "']").text() == "") {
                     $("[class='" + i + "']").text(transfer);
                     choicesArray[choicesArray.indexOf(classOfHint)] = i;
-                    solutionArray.splice(hintIndex, 1);
-                    return;
+                    break;
                 }
             }
         }
-        solutionArray.splice(hintIndex, 1);
+        solutionArray.splice(hintIndex, 1); 
     }
 }
 
 function placeHintAns() {
     if (solutionArray.length > 0) {
         var hintIndex = randomNum(0, solutionArray.length - 1);
+        if ($("[class=" + choicesArray[solutionArray[hintIndex].ind] + "]").hasClass("selected") == true) {
+            $(".selected").css("background-color", "#ebebeb");
+            $(".selected").removeClass("selected");
+        }
         var classOfHint = indexToClass(solutionArray[hintIndex].ind);
         var transfer = $("[class=" + classOfHint + "]").text();
         $("[class=" + classOfHint + "]").text(solutionArray[hintIndex].num);
@@ -54,7 +61,7 @@ function placeHintAns() {
                 if ($("[class='" + i + "']").text() == "") {
                     $("[class='" + i + "']").text(transfer);
                     choicesArray[choicesArray.indexOf(classOfHint)] = i;
-                    return;
+                    break;
                 }
             }
         }

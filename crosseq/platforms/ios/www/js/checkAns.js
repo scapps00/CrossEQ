@@ -28,16 +28,12 @@ function eval(first, operator, second, result) {
     var secondInt = parseInt(second);
     var resultInt = parseInt(result);
     if (operator === "+") {
-        console.log(firstInt + secondInt == resultInt);
         return firstInt + secondInt == resultInt
     } else if (operator === "-") {
-        console.log(firstInt - secondInt == resultInt);
         return firstInt - secondInt == resultInt
     } else if (operator === "×"){
-        console.log(firstInt * secondInt == resultInt);
         return firstInt * secondInt == resultInt
     } else if (operator === "÷") {
-        console.log(firstInt / secondInt == resultInt);
         return firstInt / secondInt == resultInt
     }
 }

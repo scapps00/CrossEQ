@@ -1,5 +1,5 @@
 function assignClick() {
-    $("td:not(:empty):not(.equal):not(.static):not(.hint):not(.countdown):not(.score):not(.answer)").click(function(event1) {
+    $("td:not(:empty):not(.equal):not(.static):not(.hint):not(.countdown):not(.score):not(.answer):not(.selected)").click(function(event1) {
         event1.preventDefault();
         $(".selected").css("background-color", "#ebebeb");
         $("td:empty:not(.blank)").unbind();
