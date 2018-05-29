@@ -10,6 +10,8 @@ function randomNum(min, max) {
 
 var choicesArray = [];
 
+var test = 1;
+
 function solutionGen() {
 
     var ops = ["+", "-", "×", "÷"];
@@ -21,7 +23,9 @@ function solutionGen() {
 
     function findMultTotal(divisor) {
         var multTally = [];
-        if (divisor > 40) {
+        if (divisor == 0 || parseInt(divisor) == NaN || divisor == "error") {
+            return "error";
+        } else if (divisor > 40) {
             multTally.push(divisor);
             for (var i = divisor * 2; i < 99; i++) {
                 multTally.push(i);
@@ -36,19 +40,25 @@ function solutionGen() {
     }
 
     function findMultTotalInner(divisor, tally) {
-        var totalIndex = randomNum(0, tally.length - 1);
-        var total = tally[totalIndex];
-        tally.splice(totalIndex, 1);
+
+        //console.log(divisor);
+        //console.log(tally);
+        var tally2 = tally;
+        var totalIndex = randomNum(0, tally2.length - 1);
+        var total = tally2[totalIndex];
         if (total % divisor === 0) {
             return total;
         } else {
-            return findMultTotalInner(divisor, tally);
+            tally2.splice(totalIndex, 1);
+            return findMultTotalInner(divisor, tally2);
         }
     }
 
     function findDivisor(total) {
         var divTally = [];
-        if (total % 2 != 0 && total % 3 != 0 && total % 5 != 0 && total % 7 != 0) {
+        if (total == 0 || parseInt(total) == NaN || total == "error") {
+            return "error";
+        } else if (total % 2 != 0 && total % 3 != 0 && total % 5 != 0 && total % 7 != 0) {
             for (var i = 1; i < total + 1; i++) {
                 divTally.push(i);
             }
@@ -63,13 +73,15 @@ function solutionGen() {
 
 
     function findDivisorInner(total, tally) {
-        var divisorIndex = randomNum(0, tally.length - 1);
-        var divisor = tally[divisorIndex];
-        tally.splice(divisorIndex, 1);
+
+        var tally2 = tally;
+        var divisorIndex = randomNum(0, tally2.length - 1);
+        var divisor = tally2[divisorIndex];
         if (total % divisor === 0) {
             return divisor;
         } else {
-            return findDivisorInner(total, tally);
+            tally2.splice(divisorIndex, 1);
+            return findDivisorInner(total, tally2);
         }
     }
 

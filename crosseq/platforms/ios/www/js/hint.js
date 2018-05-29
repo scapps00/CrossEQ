@@ -29,6 +29,10 @@ function placeHint(exceptionArray) {
         }
         var classOfHint = indexToClass(solutionMinusExArray[hintIndex].ind);
         var transfer = $("[class=" + classOfHint + "]").text();
+        var movedFrom = choicesArray[solutionMinusExArray[hintIndex].ind];
+        if (movedFrom.length == 3) {
+            var movedFromVal = $("[class=" + choicesArray[solutionMinusExArray[hintIndex].ind] + "]").text();
+        }
         if (transfer == solutionMinusExArray[hintIndex].num) {
             exceptionArray.push(solutionMinusExArray[hintIndex]);
             placeHint(exceptionArray);
@@ -36,7 +40,7 @@ function placeHint(exceptionArray) {
             $("[class=" + classOfHint + "]").text(solutionMinusExArray[hintIndex].num);
             $("[class=" + classOfHint + "]").addClass("static");
             if (choicesArray[solutionMinusExArray[hintIndex].ind].toString().length <= 2) {
-            $("[class='" + choicesArray[solutionMinusExArray[hintIndex].ind] + "']").text("");
+                $("[class='" + choicesArray[solutionMinusExArray[hintIndex].ind] + "']").text("");
             } else {
                 $("[class=" + choicesArray[solutionMinusExArray[hintIndex].ind] + "]").text("");
             }
@@ -47,6 +51,30 @@ function placeHint(exceptionArray) {
                         $("[class='" + i + "']").text(transfer);
                         choicesArray[choicesArray.indexOf(classOfHint)] = i;
                         break;
+                    }
+                }
+            }
+            if (movedFrom.length == 3) {
+                if (solution[classToIndex(movedFrom)] == movedFromVal) {
+                    var found = classToIndex(movedFrom);
+                    console.log(found);
+                    // if (found != classToIndex(movedFrom)) {
+                    //     var altSolution = solution;
+                    //     altSolution[found] = "nein";
+                    //     found = altSolution.indexOf(movedFromVal);
+                    //     console.log(found);
+                    // }
+                    $("[class=" + movedFrom + "]").text(movedFromVal);
+                    var whereFound = choicesArray[found];
+                    choicesArray[found] = movedFrom;
+                    console.log(3);
+                    console.log(whereFound);
+                    if (whereFound.toString().length <= 2) {
+                        console.log(1);
+                        $("[class='" + whereFound + "']").text("");
+                    } else {
+                        console.log(2);
+                        $("[class=" + whereFound + "]").text("");
                     }
                 }
             }
@@ -84,6 +112,10 @@ function placeHintAns() {
 function indexToClass(index) {
     var string = index.toString();
     return string.charAt(0) + "-" + string.charAt(1);
+}
+
+function classToIndex(clas) {
+    return clas.charAt(0).toString() + clas.charAt(2).toString();
 }
 
 $(".hint").click(function() {
