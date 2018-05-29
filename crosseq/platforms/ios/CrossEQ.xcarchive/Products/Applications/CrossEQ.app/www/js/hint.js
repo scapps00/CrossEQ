@@ -28,17 +28,38 @@ function placeHint(exceptionArray) {
             $(".selected").removeClass("selected");
         }
         var classOfHint = indexToClass(solutionMinusExArray[hintIndex].ind);
-        var transfer = $("[class=" + classOfHint + "]").text();
+        var transfer = "";
+        var classNameSelected = $(".selected").attr("class").split(" ")[0];
+        if (classNameSelected == classOfHint) {
+            transfer = $(".selected").text();
+        } else {
+            transfer = $("[class=" + classOfHint + "]").text();
+        }
         var movedFrom = choicesArray[solutionMinusExArray[hintIndex].ind];
         if (movedFrom.length == 3) {
             var movedFromVal = $("[class=" + choicesArray[solutionMinusExArray[hintIndex].ind] + "]").text();
+            console.log(movedFrom);
+            console.log(movedFromVal);
+        } else {
+            var movedFromVal = "00000000";
         }
         if (transfer == solutionMinusExArray[hintIndex].num) {
             exceptionArray.push(solutionMinusExArray[hintIndex]);
             placeHint(exceptionArray);
         } else {
-            $("[class=" + classOfHint + "]").text(solutionMinusExArray[hintIndex].num);
-            $("[class=" + classOfHint + "]").addClass("static");
+            var classNameSelected = $(".selected").attr("class").split(" ")[0];
+            if (classNameSelected == classOfHint) {
+                $(".selected").text(solutionMinusExArray[hintIndex].num);
+                $(".selected").addClass("static");
+                console.log("hereo");
+                //$("td:empty:not(.blank)").unbind();
+                $(".selected").css("background-color", "#ebebeb");
+                $(".selected").removeClass("selected");
+                console.log($(".selected").text());
+            } else {
+                $("[class=" + classOfHint + "]").text(solutionMinusExArray[hintIndex].num);
+                $("[class=" + classOfHint + "]").addClass("static");
+            }
             if (choicesArray[solutionMinusExArray[hintIndex].ind].toString().length <= 2) {
                 $("[class='" + choicesArray[solutionMinusExArray[hintIndex].ind] + "']").text("");
             } else {
@@ -55,6 +76,7 @@ function placeHint(exceptionArray) {
                 }
             }
             if (movedFrom.length == 3) {
+                console.log(solution[classToIndex(movedFrom)]);
                 if (solution[classToIndex(movedFrom)] == movedFromVal) {
                     var found = classToIndex(movedFrom);
                     console.log(found);

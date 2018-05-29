@@ -102,11 +102,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		lPw/c7zOiqtm/NQ7P/FN4dQd1xk=
+		2Ji0VK5nNnCa0UE0I292e7fhqgQ=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		+vJuJgPvE/GInLWnB5CCjTiDjlA=
+		p1AQEReTNSC2nvEI/lOJFChVkcQ=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		pR074tacijGCun3Lwvu37+FlUPU=
+		Yus9SVp06OcOLp6mclrX8EwSKI0=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		QMvF+YHs5cfuzpjAzV9EGOItmzE=
+		GtrfcZCKZ0w1Tr2Kg70Hk+hgYwc=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -212,17 +212,21 @@
 		<data>
 		fOJ6Oo64JOiEfm/fcWqgW2y3Kd0=
 		</data>
-		<key>www/audio/ans/Sound Electronic Move.mp3</key>
-		<data>
-		ZAtv+MjGksbpu/d14SYSvEC86vY=
-		</data>
 		<key>www/audio/ans/ans.wav</key>
 		<data>
-		bStcp+yAX7hnm/ju/hxZ5fuABzw=
+		uY+yA3Caf27aU6qU+pPYzkTelQ4=
+		</data>
+		<key>www/audio/ans/cartoon_success.mp3</key>
+		<data>
+		BYpw69TAU/60L7Q1EP+Xxm4vnj8=
 		</data>
 		<key>www/audio/audiojungle-20274693-lose.zip</key>
 		<data>
 		mcrdUiBk3CSo3zv4+rjQwcrkCgU=
+		</data>
+		<key>www/audio/audiojungle-21927527-cartoon-success.zip</key>
+		<data>
+		HltmNsDywW8Ei9qwEef72AC1evc=
 		</data>
 		<key>www/audio/audiojungle-21928872-achievement-unlocked.zip</key>
 		<data>
@@ -306,11 +310,15 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		rSIobl0JAtT5Yxe/S4IjwBX+QFY=
+		ZuQdBucVNc9spKV4MzzSl8S30sI=
+		</data>
+		<key>www/js/audioVolume.js</key>
+		<data>
+		MJeSv9rw6tNOo0JwnueFto9Yt/8=
 		</data>
 		<key>www/js/checkAns.js</key>
 		<data>
-		Embvu3l+Ja4Z5d0egVAC4t2Qexo=
+		LZ5fTo3Uo8rlzIbunXgLMIMIxYQ=
 		</data>
 		<key>www/js/clock.js</key>
 		<data>
@@ -322,7 +330,7 @@
 		</data>
 		<key>www/js/hint.js</key>
 		<data>
-		wvLJt8QwTQLqvp7OcgDLy1GaxEs=
+		yzqTQIcwIl35f5pYPEF7vkXtUXk=
 		</data>
 		<key>www/js/index.js</key>
 		<data>
@@ -338,7 +346,7 @@
 		</data>
 		<key>www/js/reset.js</key>
 		<data>
-		slINyflezRVK+2xjVEBpWMgJ204=
+		PcX5N6FnZRL2w152Vs7i202V92Y=
 		</data>
 		<key>www/js/score.js</key>
 		<data>
@@ -623,22 +631,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lPw/c7zOiqtm/NQ7P/FN4dQd1xk=
+			2Ji0VK5nNnCa0UE0I292e7fhqgQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			2GYdeP31JcAQNOC7Rrvyj0Uqaka0x8gAmp1YbB/b1yw=
+			O/OK2QLrZW6dDRf7Zlv0NDvSkgMccFO+TiWyzeGb+J4=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+vJuJgPvE/GInLWnB5CCjTiDjlA=
+			p1AQEReTNSC2nvEI/lOJFChVkcQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			rQt9vcVc+X27P4hfeJG8Cx235WPV9D7ULonOuwtKtbI=
+			PfQ4T5qKH7CiHgn31bMYLcz+2aSVOsrchKKmZn060n0=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -656,11 +664,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pR074tacijGCun3Lwvu37+FlUPU=
+			Yus9SVp06OcOLp6mclrX8EwSKI0=
 			</data>
 			<key>hash2</key>
 			<data>
-			K3QFwWJZwMBR0f/Go5KauSJMHnmCMySScM1CM17Qn6A=
+			qZeHgohtZZWKheyVzpCq3h3thIDOwqQeH5IK+1DNqiQ=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -689,11 +697,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QMvF+YHs5cfuzpjAzV9EGOItmzE=
+			GtrfcZCKZ0w1Tr2Kg70Hk+hgYwc=
 			</data>
 			<key>hash2</key>
 			<data>
-			JgXRZrERE3cS/nyydXkuKGEvHz6ZKK/QAGWFBjojJw0=
+			euCssc2NLXEf6MuEdH+e+aJp7zwp4BRoqjqc4WVh/3Y=
 			</data>
 		</dict>
 		<key>config.xml</key>
@@ -905,26 +913,26 @@
 			yC06y1yOd3seIldr291O3CBO2/9EG1JLc0ZCd+giRXk=
 			</data>
 		</dict>
-		<key>www/audio/ans/Sound Electronic Move.mp3</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZAtv+MjGksbpu/d14SYSvEC86vY=
-			</data>
-			<key>hash2</key>
-			<data>
-			Yf8HevMx3XHXrL6Zab+4uD/8ADYhgZQpnxEDidSkFsg=
-			</data>
-		</dict>
 		<key>www/audio/ans/ans.wav</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bStcp+yAX7hnm/ju/hxZ5fuABzw=
+			uY+yA3Caf27aU6qU+pPYzkTelQ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			MVb7Xvg9K+0hWbH2CeQXZDhZgeK1CPWu941f10IFVzI=
+			KamDXe9ib/ehBSAPz7W/V+z+0cnP8WCS/sSpIOmMCrM=
+			</data>
+		</dict>
+		<key>www/audio/ans/cartoon_success.mp3</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BYpw69TAU/60L7Q1EP+Xxm4vnj8=
+			</data>
+			<key>hash2</key>
+			<data>
+			Y3gVeldmSohZbDOqgXi9FsMbuHo/8L3CuxSifSNbyB0=
 			</data>
 		</dict>
 		<key>www/audio/audiojungle-20274693-lose.zip</key>
@@ -936,6 +944,17 @@
 			<key>hash2</key>
 			<data>
 			1pvwlpFINkYuTiHcTU1A2PBG66ahIf77HcsOJEiWtSc=
+			</data>
+		</dict>
+		<key>www/audio/audiojungle-21927527-cartoon-success.zip</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HltmNsDywW8Ei9qwEef72AC1evc=
+			</data>
+			<key>hash2</key>
+			<data>
+			+AyQrt3/EPTnILs0mXNDJcM2Cf/uyaVZG216fILKf8k=
 			</data>
 		</dict>
 		<key>www/audio/audiojungle-21928872-achievement-unlocked.zip</key>
@@ -1162,22 +1181,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rSIobl0JAtT5Yxe/S4IjwBX+QFY=
+			ZuQdBucVNc9spKV4MzzSl8S30sI=
 			</data>
 			<key>hash2</key>
 			<data>
-			YJO7jG2tgDJb6dKLZk35RbyYukoCi+PISkJWFloH4Tw=
+			5iSxFDs+LQdiyllv16iIk5L+/mc1zNTLWxnKjHlLqDg=
+			</data>
+		</dict>
+		<key>www/js/audioVolume.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MJeSv9rw6tNOo0JwnueFto9Yt/8=
+			</data>
+			<key>hash2</key>
+			<data>
+			5ax8oW48BAjjPyG0hlKGElBW3kP6O4y8y2/AyqJAm1Y=
 			</data>
 		</dict>
 		<key>www/js/checkAns.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Embvu3l+Ja4Z5d0egVAC4t2Qexo=
+			LZ5fTo3Uo8rlzIbunXgLMIMIxYQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			qRCHxt1DDL9OKByleA6P4piUKJwqgrigQuKDvxmQiMM=
+			AW67uuqQRRMAcHKLp8jPztw/l2dmXQhVwWSSQpdLch8=
 			</data>
 		</dict>
 		<key>www/js/clock.js</key>
@@ -1206,11 +1236,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wvLJt8QwTQLqvp7OcgDLy1GaxEs=
+			yzqTQIcwIl35f5pYPEF7vkXtUXk=
 			</data>
 			<key>hash2</key>
 			<data>
-			32hV0NVGqocmw5MgLR9G8wPU0c4NQvik90ik2KWCJuc=
+			syxry/11/nVJFMY6uY982E6utJ/BX9RY9wLNMlSEaaA=
 			</data>
 		</dict>
 		<key>www/js/index.js</key>
@@ -1250,11 +1280,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			slINyflezRVK+2xjVEBpWMgJ204=
+			PcX5N6FnZRL2w152Vs7i202V92Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			XLI4/aiHKXxER9fswQaLzs6i8fjCS9xMrUvfGzwi6OI=
+			mrh78FVwYEbbesLaPn/BZuzFNb2O+W5ypm7apEYlr00=
 			</data>
 		</dict>
 		<key>www/js/score.js</key>

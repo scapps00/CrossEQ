@@ -20,6 +20,7 @@ function reset() {
         assignClick();
     });
     $(".answer").click(function() {
+        document.getElementById("ansAudio").play();
         clearInterval(clock);
         while (solutionArray.length > 0) {
             placeHintAns();

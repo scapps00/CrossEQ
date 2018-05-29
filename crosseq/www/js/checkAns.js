@@ -45,7 +45,41 @@ function youWon() {
     $(".youWin").text("you win!");
     $("*").unbind();
     $(".youWin").append("<div class='reset'>play again</div>");
+    $(".youWin").append("<div class='bestScoreDiv'>best score: <span id='bestScore'></span></div>");
+    bestScore();
     $(".reset").click(function() {
         reset();
     });
+}
+
+function bestScore() {
+    var sharedPreferences = window.plugins.SharedPreferences.getInstance();
+
+    var key = "bestScoreCrossEQ";
+
+    var successCallback = function(value) {
+        if (value > parseInt($(".score").text())) {
+            newBestScore(parseInt($(".score").text()));
+            $("#bestScore").text(parseInt($(".score").text()));
+        } else {
+            $("#bestScore").text(value);
+        }
+    }
+
+    var errorCallback = function(error) {
+        newBestScore(parseInt($(".score").text()));
+        $("#bestScore").text(parseInt($(".score").text()));
+    }
+
+    function newBestScore(score) {
+        var key = "bestScoreCrossEQ";
+        var value = score;
+        var successCallback = function(value) {
+        }
+        var errorCallback = function(error) {
+        }
+        sharedPreferences.put(key, value, successCallback, errorCallback);
+    }
+
+    sharedPreferences.get(key, successCallback, errorCallback);
 }
