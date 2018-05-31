@@ -29,7 +29,11 @@ function placeHint(exceptionArray) {
         }
         var classOfHint = indexToClass(solutionMinusExArray[hintIndex].ind);
         var transfer = "";
-        var classNameSelected = $(".selected").attr("class").split(" ")[0];
+        if ($(".selected").attr("class") != undefined) {
+            var classNameSelected = $(".selected").attr("class").split(" ")[0];
+        } else {
+            var classNameSelected = "";
+        }
         if (classNameSelected == classOfHint) {
             transfer = $(".selected").text();
         } else {
@@ -47,12 +51,10 @@ function placeHint(exceptionArray) {
             exceptionArray.push(solutionMinusExArray[hintIndex]);
             placeHint(exceptionArray);
         } else {
-            var classNameSelected = $(".selected").attr("class").split(" ")[0];
             if (classNameSelected == classOfHint) {
+                $("td:empty:not(.blank)").unbind();
                 $(".selected").text(solutionMinusExArray[hintIndex].num);
                 $(".selected").addClass("static");
-                console.log("hereo");
-                //$("td:empty:not(.blank)").unbind();
                 $(".selected").css("background-color", "#ebebeb");
                 $(".selected").removeClass("selected");
                 console.log($(".selected").text());

@@ -1,7 +1,12 @@
+@font-face {
+    font-family: "Lobster";
+    src: url("font/Lobster/Lobster-Regular.ttf") format("truetype");
+}
+
 body {
     background-image: url("../img/swirl_pattern.png");
     color: #424242;
-    font-family: 'Lobster', cursive;
+    font-family: "Lobster";
     font-size: 25px;
     font-weight: bold;
     text-align: center;
