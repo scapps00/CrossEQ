@@ -69,7 +69,6 @@ function placeHint(exceptionArray) {
             } else {
                 $("[class=" + choicesArray[solutionMinusExArray[hintIndex].ind] + "]").text("");
             }
-            choicesArray[solutionMinusExArray[hintIndex].ind] = classOfHint;
             if (transfer != "") {
                 for (var i = 1; i < 21; i++) {
                     if ($("[class='" + i + "']").text() == "") {
@@ -79,6 +78,7 @@ function placeHint(exceptionArray) {
                     }
                 }
             }
+            choicesArray[solutionMinusExArray[hintIndex].ind] = classOfHint;
             if (movedFrom.length == 3) {
                 if (solution[classToIndex(movedFrom)] == movedFromVal) {
                     var found = classToIndex(movedFrom);
