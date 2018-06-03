@@ -140,3 +140,27 @@ td {
 #clickAudio, #ansAudio, #loseAudio, #winAudio, #hintAudio {
     display: none;
 }
+
+.indexChoices {
+    width: 80%;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 150px;
+    font-size: 30px;
+}
+
+.playGame, .howToPlay {
+    border: 2px #424242 solid;
+    background-color: #ebebeb;
+    border-radius: 10px;
+}
+
+.space {
+    height: 25px;
+    background-color: transparent;
+}
+
+.indexChoicesTable {
+    width: 100%;
+}
