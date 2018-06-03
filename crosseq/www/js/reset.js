@@ -7,10 +7,10 @@ function reset() {
     solution = [];
     choicesArray = [];
     solutionGen();
-    console.log(solution);
     $("#min").text("0");
     $("#sec").text("00");
     clock = setInterval(clockInc, 1000);
+    $(".score").text("000");
     solutionArray = [];
     solution.forEach(placeInArray);
     console.log(solutionArray);

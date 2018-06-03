@@ -15,7 +15,7 @@ function assignClick() {
             choicesArray[choicesArray.indexOf(parseInt(selectedClass[0]))] = $(event2.target).attr("class");
             $(".selected").text("");
             $(".selected").css("background-color", "#ebebeb");
-            $(".selected").removeClass(".selected");
+            $(".selected").removeClass("selected");
             $("td:not(.hint):not(.countdown):not(.score):not(.answer)").unbind();
             checkAns();
             assignClick();

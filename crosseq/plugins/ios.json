@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.crosseq"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.crosseq"
     }
   },
   "dependent_plugins": {}

@@ -9,6 +9,8 @@ var solutionArray = [];
 
 solution.forEach(placeInArray);
 
+var selectedTrigger = false;
+
 function placeHint(exceptionArray) {
     document.getElementById("hintAudio").pause();
     document.getElementById("hintAudio").load()
@@ -26,6 +28,8 @@ function placeHint(exceptionArray) {
         if ($("[class='" + choicesArray[solutionMinusExArray[hintIndex].ind] + " selected']").attr("class") != undefined) {
             $(".selected").css("background-color", "#ebebeb");
             $(".selected").removeClass("selected");
+            selectedTrigger = true;
+            console.log(true);
         }
         var classOfHint = indexToClass(solutionMinusExArray[hintIndex].ind);
         var transfer = "";
@@ -42,8 +46,6 @@ function placeHint(exceptionArray) {
         var movedFrom = choicesArray[solutionMinusExArray[hintIndex].ind];
         if (movedFrom.length == 3) {
             var movedFromVal = $("[class=" + choicesArray[solutionMinusExArray[hintIndex].ind] + "]").text();
-            console.log(movedFrom);
-            console.log(movedFromVal);
         } else {
             var movedFromVal = "00000000";
         }
@@ -78,61 +80,53 @@ function placeHint(exceptionArray) {
                 }
             }
             if (movedFrom.length == 3) {
-                console.log(solution[classToIndex(movedFrom)]);
                 if (solution[classToIndex(movedFrom)] == movedFromVal) {
                     var found = classToIndex(movedFrom);
-                    console.log(found);
-                    // if (found != classToIndex(movedFrom)) {
-                    //     var altSolution = solution;
-                    //     altSolution[found] = "nein";
-                    //     found = altSolution.indexOf(movedFromVal);
-                    //     console.log(found);
-                    // }
                     $("[class=" + movedFrom + "]").text(movedFromVal);
+                    if (selectedTrigger == true) {
+                        $("[class=" + movedFrom + "]").css("background-color", "#ecbc76");
+                        $("[class=" + movedFrom + "]").addClass("selected");
+                        selectedTrigger = false;
+                    }
                     var whereFound = choicesArray[found];
                     var altSolution = solution;
                     altSolution[solutionMinusExArray[hintIndex].ind] = "nein";
                     choicesArray[found] = movedFrom;
 
                     function checkAgain() {
-                        console.log(found + " 1");
-                        console.log(whereFound + " 2");
-                        console.log(movedFromVal + " 3");
-                        console.log(solution[found]);
+                        if (selectedTrigger == true) {
+                            $("[class=" + whereFrom + "]").css("background-color", "#ecbc76");
+                            $("[class=" + whereFrom + "]").addClass("selected");
+                            selectedTrigger = false;
+                        }
                         if (whereFound.toString().length <= 2) {
-                            console.log($("[class='" + whereFound + "']").text())
                             var compare = $("[class='" + whereFound + "']").text();
                         } else {
-                            console.log($("[class=" + whereFound + "]").text())
                             var compare = $("[class=" + whereFound + "]").text();
                         }
                         if (solution[found] == compare) {
-                            console.log(5);
                             altSolution[found] = "nein";
-                            console.log(altSolution);
                             if (movedFromVal != "+" && movedFromVal != "-" && movedFromVal != "×" && movedFromVal != "÷") {
                                 found = altSolution.indexOf(parseInt(movedFromVal));
-                                console.log("no");
                             } else {
-                                console.log("hey");
                                 found = altSolution.indexOf(movedFromVal);
-                                console.log(found);
                             }
                             var oldWhereFound = whereFound;
-                            console.log(choicesArray);
                             whereFound = choicesArray[found];
                             choicesArray[found] = oldWhereFound;
-                            console.log(3);
-                            console.log(whereFound);
                             if (whereFound.toString().length <= 2) {
-                                console.log(1);
                                 $("[class='" + whereFound + "']").text("");
+                            } else if ($(".selected").attr("class")) {
+                                if ($(".selected").attr("class").split(" ")[0] == whereFound) {
+                                    $(".selected").text("");
+                                    $(".selected").removeClass("selected");
+                                    selectedTrigger = true;
+                                } else {
+                                    $("[class=" + whereFound + "]").text("");
+                                }
                             } else {
-                                console.log(2);
                                 $("[class=" + whereFound + "]").text("");
                             }
-                            console.log(found);
-                            console.log(whereFound);
                             checkAgain(); 
                         }
                     }
@@ -140,6 +134,7 @@ function placeHint(exceptionArray) {
                     checkAgain();
                 }
             }
+            selectedTrigger = false;
             solutionArray.splice(solutionArray.indexOf(solutionMinusExArray[hintIndex]), 1); 
         }
     }

@@ -1,3 +1,5 @@
+document.addEventListener("deviceready", deviceReady, false);
+
 function checkAns() {
         if (eval(textGrid("2-2"), textGrid("2-3"), textGrid("2-4"), textGrid("2-6"))) {
             if (eval(textGrid("3-1"), textGrid("3-2"), textGrid("3-3"), textGrid("3-5"))) {
@@ -53,33 +55,43 @@ function youWon() {
 }
 
 function bestScore() {
-    var sharedPreferences = window.plugins.SharedPreferences.getInstance();
+    if ($(".score").text() != "000") {
+        $("#bestScore").text("woo");
+        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fs) {
+            fs.root.getFile("bestScore.txt", { create: true, exclusive: false }, function(fileEntry) {
+                fileEntry.file(function(file) {
+                    var reader = new FileReader();
 
-    var key = "bestScoreCrossEQ";
+                    reader.onloadend = function() {
+                        if (parseInt(this.result) <= parseInt($(".score").text())) {
+                            $("#bestScore").text(parseInt(this.result));
+                        } else {
+                            $("#bestScore").text(parseInt($(".score").text()));
+                            
+                            fileEntry.createWriter(function(fileWriter) {
 
-    var successCallback = function(value) {
-        if (value > parseInt($(".score").text())) {
-            newBestScore(parseInt($(".score").text()));
-            $("#bestScore").text(parseInt($(".score").text()));
-        } else {
-            $("#bestScore").text(value);
-        }
+                                fileWriter.onerror = function(e) {
+                                    $("#bestScore").text(e);
+                                }
+                                
+                                fileWriter.write($(".score").text());
+
+                            });
+                        }
+                    }
+
+                    reader.readAsText(file);
+
+                }, onErrorReadFile);
+            });
+        });
     }
+}
 
-    var errorCallback = function(error) {
-        newBestScore(parseInt($(".score").text()));
-        $("#bestScore").text(parseInt($(".score").text()));
-    }
+function deviceReady() {
+    console.log("device ready!");
+}
 
-    function newBestScore(score) {
-        var key = "bestScoreCrossEQ";
-        var value = score;
-        var successCallback = function(value) {
-        }
-        var errorCallback = function(error) {
-        }
-        sharedPreferences.put(key, value, successCallback, errorCallback);
-    }
-
-    sharedPreferences.get(key, successCallback, errorCallback);
+function onErrorReadFile() {
+    $("#bestScore").text("error");
 }
