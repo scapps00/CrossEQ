@@ -87,7 +87,6 @@ function placeHint(exceptionArray) {
                         $("[class=" + movedFrom + "]").css("background-color", "#ecbc76");
                         $("[class=" + movedFrom + "]").addClass("selected");
                         selectedTrigger = false;
-                        console.log(selectedTrigger);
                     }
                     var whereFound = choicesArray[found];
                     var altSolution = solution;
@@ -95,6 +94,11 @@ function placeHint(exceptionArray) {
                     choicesArray[found] = movedFrom;
 
                     function checkAgain() {
+                        if (selectedTrigger == true) {
+                            $("[class=" + whereFrom + "]").css("background-color", "#ecbc76");
+                            $("[class=" + whereFrom + "]").addClass("selected");
+                            selectedTrigger = false;
+                        }
                         if (whereFound.toString().length <= 2) {
                             var compare = $("[class='" + whereFound + "']").text();
                         } else {
@@ -112,6 +116,14 @@ function placeHint(exceptionArray) {
                             choicesArray[found] = oldWhereFound;
                             if (whereFound.toString().length <= 2) {
                                 $("[class='" + whereFound + "']").text("");
+                            } else if ($(".selected").attr("class")) {
+                                if ($(".selected").attr("class").split(" ")[0] == whereFound) {
+                                    $(".selected").text("");
+                                    $(".selected").removeClass("selected");
+                                    selectedTrigger = true;
+                                } else {
+                                    $("[class=" + whereFound + "]").text("");
+                                }
                             } else {
                                 $("[class=" + whereFound + "]").text("");
                             }
