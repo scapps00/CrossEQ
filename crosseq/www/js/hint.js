@@ -23,7 +23,7 @@ function placeHint(exceptionArray) {
         solutionMinusExArray.splice(solutionMinusExArray.indexOf(item), 1);
     });
     if (solutionMinusExArray.length > 0) {
-        //hintScore();
+        hintScore();
         var hintIndex = randomNum(0, solutionMinusExArray.length - 1);
         if ($("[class='" + choicesArray[solutionMinusExArray[hintIndex].ind] + " selected']").attr("class") != undefined) {
             $(".selected").css("background-color", "#ebebeb");

@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "Lobster";
-    src: url("font/Lobster/Lobster-Regular.ttf") format("truetype");
+    font-family: "Dosis";
+    src: url("font/Dosis/Dosis-Regular.ttf") format("truetype");
 }
 
 body {
     background-image: url("../img/swirl_pattern.png");
     color: #424242;
-    font-family: "Lobster";
+    font-family: "Dosis";
     font-size: 25px;
     font-weight: bold;
     text-align: center;
@@ -146,14 +146,25 @@ td {
     display: block;
     margin: auto;
     position: relative;
-    top: 150px;
+    top: 75px;
     font-size: 30px;
 }
 
-.playGame, .howToPlay {
+.playGame, .howToPlay, .title, .titleSymbols {
     border: 2px #424242 solid;
     background-color: #ebebeb;
     border-radius: 10px;
+}
+
+.title {
+    font-size: 55px;
+}
+
+.titleSymbols {
+    font-size: 55px;
+    line-height: 45px;
+    padding-bottom: 10px;
+
 }
 
 .space {
@@ -163,4 +174,37 @@ td {
 
 .indexChoicesTable {
     width: 100%;
+}
+
+h1 {
+    border: 2px #424242 solid;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    font-size: 40px;
+    width: 90%;
+    padding: 3px;
+    display: block;
+    margin: auto;
+}
+
+h2 {
+    border: 2px #424242 solid;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    font-size: 25px;
+    width: 90%;
+    padding: 3px;
+    display: block;
+    margin: auto;
+}
+
+.ready {
+    border: 2px #424242 solid;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    font-size: 30px;
+    width: 90%;
+    padding: 3px;
+    display: block;
+    margin: auto;
 }
