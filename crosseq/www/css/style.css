@@ -136,10 +136,12 @@ td {
     visibility: hidden;
     color: #424242;
     font-size: 40px;
+    text-align: center;
     position: absolute;
     top: 65%;
-    text-align: center;
-    width: 98%;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 #clickAudio, #ansAudio, #loseAudio, #winAudio, #hintAudio {
