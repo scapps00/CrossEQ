@@ -1,8 +1,5 @@
-var hintTracker = [];
-
 function hintScore() {
-    hintTracker.push(1);
-    if (parseInt($(".score").text()) + (hintTracker.length * 15) < 999) {
+    if (parseInt($(".score").text()) + 100 < 999) {
         var scoreCalc = (parseInt($(".score").text()) + (hintTracker.length * 15)).toString();
         if (scoreCalc.length == 2) {
             $(".score").text("0" + scoreCalc);

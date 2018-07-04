@@ -1,20 +1,4 @@
-function placeInArray(item, index) {
-    solutionArray.push({
-        num: item,
-        ind: index
-    });
-}
-
-var solutionArray = [];
-
-solution.forEach(placeInArray);
-
-var selectedTrigger = false;
-
-function placeHint(exceptionArray) {
-    document.getElementById("hintAudio").pause();
-    document.getElementById("hintAudio").load();
-    document.getElementById("hintAudio").play();
+function setNormal(exceptionArray) {
     if (!exceptionArray) {
         var exceptionArray = [];
     }
@@ -23,13 +7,11 @@ function placeHint(exceptionArray) {
         solutionMinusExArray.splice(solutionMinusExArray.indexOf(item), 1);
     });
     if (solutionMinusExArray.length > 0) {
-        hintScore();
         var hintIndex = randomNum(0, solutionMinusExArray.length - 1);
         if ($("[class='" + choicesArray[solutionMinusExArray[hintIndex].ind] + " selected']").attr("class") != undefined) {
             $(".selected").css("background-color", "#ebebeb");
             $(".selected").removeClass("selected");
             selectedTrigger = true;
-            console.log(true);
         }
         var classOfHint = indexToClass(solutionMinusExArray[hintIndex].ind);
         var transfer = "";
@@ -51,7 +33,7 @@ function placeHint(exceptionArray) {
         }
         if (transfer == solutionMinusExArray[hintIndex].num) {
             exceptionArray.push(solutionMinusExArray[hintIndex]);
-            placeHint(exceptionArray);
+            setNormal(exceptionArray);
         } else {
             if (classNameSelected == classOfHint) {
                 $("td:empty:not(.blank)").unbind();
@@ -140,43 +122,6 @@ function placeHint(exceptionArray) {
     }
 }
 
-function placeHintAns() {
-    if (solutionArray.length > 0) {
-        var hintIndex = randomNum(0, solutionArray.length - 1);
-        if ($("[class=" + choicesArray[solutionArray[hintIndex].ind] + "]").hasClass("selected") == true) {
-            $(".selected").css("background-color", "#ebebeb");
-            $(".selected").removeClass("selected");
-        }
-        var classOfHint = indexToClass(solutionArray[hintIndex].ind);
-        var transfer = $("[class=" + classOfHint + "]").text();
-        $("[class=" + classOfHint + "]").text(solutionArray[hintIndex].num);
-        $("[class=" + classOfHint + "]").addClass("static");
-        $("[class='" + choicesArray[solutionArray[hintIndex].ind] + "']").text("");
-        choicesArray[solutionArray[hintIndex].ind] = classOfHint;
-        if (transfer != "") {
-            for (var i = 1; i < 21; i++) {
-                if ($("[class='" + i + "']").text() == "") {
-                    $("[class='" + i + "']").text(transfer);
-                    choicesArray[choicesArray.indexOf(classOfHint)] = i;
-                    break;
-                }
-            }
-        }
-        solutionArray.splice(hintIndex, 1);
-    }
+for (var i = 0; i < 4; i++) {
+    setNormal();
 }
-
-function indexToClass(index) {
-    var string = index.toString();
-    return string.charAt(0) + "-" + string.charAt(1);
-}
-
-function classToIndex(clas) {
-    return clas.charAt(0).toString() + clas.charAt(2).toString();
-}
-
-$(".hint").click(function() {
-    placeHint();
-    checkAns();
-    assignClick();
-});

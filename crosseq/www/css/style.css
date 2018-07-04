@@ -157,7 +157,7 @@ td {
     display: none;
 }
 
-.indexChoices {
+.indexChoices, .modeChoices {
     width: 80%;
     display: block;
     margin: auto;
@@ -166,13 +166,13 @@ td {
     font-size: 30px;
 }
 
-.playGame, .howToPlay, .title, .titleSymbols, .credits {
+.playGame, .howToPlay, .title, .titleSymbols, .credits, .pickMode, .easy, .normal, .hard, .back {
     border: 2px #424242 solid;
     background-color: #ebebeb;
     border-radius: 10px;
 }
 
-.title {
+.title, .pickMode {
     font-size: 55px;
 }
 
@@ -188,7 +188,7 @@ td {
     background-color: transparent;
 }
 
-.indexChoicesTable {
+.indexChoicesTable, .modeChoicesTable {
     width: 100%;
 }
 

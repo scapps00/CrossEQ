@@ -57,7 +57,7 @@ function youWon() {
 function bestScore() {
     if ($(".score").text() != "000") {
         window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fs) {
-            fs.root.getFile("bestScoreHard.txt", { create: true, exclusive: false }, function(fileEntry) {
+            fs.root.getFile("bestScoreEasy.txt", { create: true, exclusive: false }, function(fileEntry) {
                 fileEntry.file(function(file) {
                     var reader = new FileReader();
 
