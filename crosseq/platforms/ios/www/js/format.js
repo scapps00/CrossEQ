@@ -1,8 +1,8 @@
-var gameHeight = $(window).height();
+var gameHeight = $(window).height() - 20;
 $(".entireContainer").height(gameHeight);
-var gameWidth = $(window).height() / 1.719;
+var gameWidth = gameHeight / 1.719;
 if (gameWidth > $(window).width()) {
-    gameWidth = $(window).height() / 2;
+    gameWidth = gameHeight / 2;
 }
 $(".entireContainer").width(gameWidth);
 

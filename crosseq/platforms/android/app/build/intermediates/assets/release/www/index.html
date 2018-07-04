@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>CrossEQ</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="indexChoices">
+            <table class="indexChoicesTable">
+                <tr>
+                    <td class="titleSymbols">
+                        + - × ÷
+                    </td>
+                </tr>
+                <tr class="space">
+                    <td class="space">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title">
+                        CrossEQ
+                    </td>
+                    </tr>
+                    <tr class="space">
+                        <td class="space">
+                        </td>
+                    </tr>
+                <tr>
+                    <td class="playGame">
+                        Play!
+                    </td>
+                </tr>
+                <tr class="space">
+                    <td class="space">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="howToPlay">
+                        How Do I Play?
+                    </td>
+                </tr>
+                <tr class="space">
+                    <td class="space">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="credits">
+                        Credits
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(".playGame").click(function() {
+                location.href = "game.html";
+            });
+
+            $(".howToPlay").click(function() {
+                location.href = "howToPlay.html";
+            });
+
+            $(".credits").click(function() {
+                location.href = "credits.html";
+            });
+        </script>
+    </body>
+</html>

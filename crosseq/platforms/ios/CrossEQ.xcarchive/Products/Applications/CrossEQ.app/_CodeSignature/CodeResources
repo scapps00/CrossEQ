@@ -102,11 +102,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		zC+IyssFvFdYdFYgMM9DjPpgMNM=
+		oKteRounR6cgEmo3Wvk2DXknx+0=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		l7NUAosIwAmfjSrkXItpNRYYluY=
+		WOvSaoBo0iMnzeN8r/aBosSmotk=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		SxNeQYNTw4Ym3ra7UN064w9Hd3k=
+		Z3D/HUgiOo4LrhR4fspScmctyBk=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -194,7 +194,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		kmMu8CxhopB8UtknwSda3prQxCY=
+		xnHcC/Kj0wXR/wnsGyW4pYUtuXI=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -386,11 +386,11 @@
 		</data>
 		<key>www/css/style.css</key>
 		<data>
-		zF2nxPQJA0BngpyjOmAAOOkUJUA=
+		K+PhiVlTXgtFwqffg9qtDGvv4pc=
 		</data>
 		<key>www/game.html</key>
 		<data>
-		/FvRAQAjyr57W7+1fsHB9XZfAqI=
+		kWG8hjjoSL9140OvNfkzBxVSRmU=
 		</data>
 		<key>www/howToPlay.html</key>
 		<data>
@@ -432,9 +432,13 @@
 		<data>
 		+a477NzcB6EReo6q7/rEGvcpT1c=
 		</data>
+		<key>www/js/contextMenu.js</key>
+		<data>
+		uXe3hPFL0GPgAGmEm2DuvNY5u40=
+		</data>
 		<key>www/js/format.js</key>
 		<data>
-		m2STglAVl8Cn/inMnEseY+z2zBE=
+		2tJngQVGlq+4GPFxkrEu2VTZ7FM=
 		</data>
 		<key>www/js/hint.js</key>
 		<data>
@@ -827,22 +831,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zC+IyssFvFdYdFYgMM9DjPpgMNM=
+			oKteRounR6cgEmo3Wvk2DXknx+0=
 			</data>
 			<key>hash2</key>
 			<data>
-			3bnFsM/fiMGiwPcKf15TawJiYynZq9YTAS9xWt0Fmgs=
+			JX9VfJ8kmTXCj6fE1kx4rN6/bT/JKSoExwMM+EAk7ps=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			l7NUAosIwAmfjSrkXItpNRYYluY=
+			WOvSaoBo0iMnzeN8r/aBosSmotk=
 			</data>
 			<key>hash2</key>
 			<data>
-			RsAJw5cfv2RapiClG5eUxfAjWIURTJ4Nw6xX6Vtx/60=
+			ZRVXhzHMaPBhxZwMnEKrpFGYopVvQyjsBqY3Xz9DFgY=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -860,11 +864,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SxNeQYNTw4Ym3ra7UN064w9Hd3k=
+			Z3D/HUgiOo4LrhR4fspScmctyBk=
 			</data>
 			<key>hash2</key>
 			<data>
-			H4ANLaiqt1gKLnLlHt0TBSpTyi5PZRsij5HS6z7h17M=
+			2n9/ZBErZDvjhNX20USYiIGb4wAyJ1GD80bHlZ04Hng=
 			</data>
 		</dict>
 		<key>LaunchImage-1100-Landscape-2436h@3x.png</key>
@@ -1069,11 +1073,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kmMu8CxhopB8UtknwSda3prQxCY=
+			xnHcC/Kj0wXR/wnsGyW4pYUtuXI=
 			</data>
 			<key>hash2</key>
 			<data>
-			0KneeawL8MN85sjei/QEE0G0relC10uNmfE/8BkTMNg=
+			Ig4blOabtuJTrBV8rZSyzA3df55uGwyoB7BErchZjoA=
 			</data>
 		</dict>
 		<key>config.xml</key>
@@ -1586,22 +1590,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zF2nxPQJA0BngpyjOmAAOOkUJUA=
+			K+PhiVlTXgtFwqffg9qtDGvv4pc=
 			</data>
 			<key>hash2</key>
 			<data>
-			1pHci0ymyOXZcIn00E8eDt4JZo7P6cpiQosZRd5u9jM=
+			JFFNk4Gia0LWwEGrYvTr3E0DxjMBtKuHpYteToTvYKM=
 			</data>
 		</dict>
 		<key>www/game.html</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/FvRAQAjyr57W7+1fsHB9XZfAqI=
+			kWG8hjjoSL9140OvNfkzBxVSRmU=
 			</data>
 			<key>hash2</key>
 			<data>
-			Lor00j1NIjZau/I7+z3ezUswbYus4q8seegDGE9d/D0=
+			ywWAkPgjHdc6u+C4KjCDCMDYtXimhEE1QNJtjChwt2c=
 			</data>
 		</dict>
 		<key>www/howToPlay.html</key>
@@ -1714,15 +1718,26 @@
 			gHB/xGVaWAhPR28kUqZU1Tx53Qwth8XTr71MYT2vkS8=
 			</data>
 		</dict>
+		<key>www/js/contextMenu.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uXe3hPFL0GPgAGmEm2DuvNY5u40=
+			</data>
+			<key>hash2</key>
+			<data>
+			jg5RdNmahs3QfwI6XQGhmmqqTQ0LwloWNBiZrCkXFbM=
+			</data>
+		</dict>
 		<key>www/js/format.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			m2STglAVl8Cn/inMnEseY+z2zBE=
+			2tJngQVGlq+4GPFxkrEu2VTZ7FM=
 			</data>
 			<key>hash2</key>
 			<data>
-			nHq0fiDSgIWDm2e8AgoqZp5xw3yYO7t9LNcPZ8LHLUo=
+			tPJKDo0WExuU/oU/3+39EGhC5P/nzL6le+Dbk1NfPfA=
 			</data>
 		</dict>
 		<key>www/js/hint.js</key>

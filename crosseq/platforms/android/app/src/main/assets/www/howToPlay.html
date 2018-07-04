@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>CrossEQ</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>Welcome to CrossEQ</h1>
+        <br>
+        <h3>The goal of the game is to put the provided numbers and symbols into the grid so that all rows are true left to right and all columns are true top to bottom.</h3>
+        <br>
+        <h3>The lower your score, the better.</h3>
+        <br>
+        <h3>Click a number or symbol to select it and click an empty space to place it.</h3>
+        <br>
+        <h3>Click the hint button to be provided with the correct answer to a space. It is recommended to use at least a few hints if you want the game to be less difficult. But be careful! Each hint is worth 15 points more than the previous hint.</h3>
+        <br>
+        <h3>The timer counts upward. You are given 30 points per minute that goes by.</h3>
+        <br>
+        <h3>Your score increases by 5 points per move. If you hit 999 points, you automatically lose.</h3>
+        <br>
+        <h3>If you want to throw in the towel, click the ans button. This will show you the correct solution to the grid. No points are awarded.</h3>
+        <br>
+        <h3>CrossEQ keeps track of your best score as you play. How low can you go?</h3>
+        <br>
+        <h3>Ready to play?</h3>
+        <br>
+        <div class="ready">Yes, I want to play!</div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(".ready").click(function() {
+            location.href = "game.html";
+        });
+    </script>
+</html>
