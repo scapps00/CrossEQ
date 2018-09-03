@@ -13,7 +13,7 @@ var selectedTrigger = false;
 
 function placeHint(exceptionArray) {
     document.getElementById("hintAudio").pause();
-    document.getElementById("hintAudio").load()
+    document.getElementById("hintAudio").load();
     document.getElementById("hintAudio").play();
     if (!exceptionArray) {
         var exceptionArray = [];

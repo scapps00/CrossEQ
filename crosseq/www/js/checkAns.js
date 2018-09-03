@@ -49,9 +49,7 @@ function youWon() {
     $(".youWin").append("<div class='reset'>play again</div>");
     $(".youWin").append("<div class='bestScoreDiv'>best score: <span id='bestScore'></span></div>");
     bestScore();
-    $(".reset").click(function() {
-        reset();
-    });
+    reset();
 }
 
 function bestScore() {
@@ -88,7 +86,6 @@ function bestScore() {
 }
 
 function deviceReady() {
-    console.log("device ready!");
 }
 
 function onErrorReadFile() {

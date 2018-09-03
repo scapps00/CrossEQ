@@ -1,9 +1,6 @@
-var hintTracker = [];
-
 function hintScore() {
-    hintTracker.push(1);
-    if (parseInt($(".score").text()) + (hintTracker.length * 15) < 999) {
-        var scoreCalc = (parseInt($(".score").text()) + (hintTracker.length * 15)).toString();
+    if (parseInt($(".score").text()) + 100 < 999) {
+        var scoreCalc = (parseInt($(".score").text()) + (100)).toString();
         if (scoreCalc.length == 2) {
             $(".score").text("0" + scoreCalc);
         } else {
@@ -46,14 +43,12 @@ function clockScore() {
 }
 
 function gameOver() {
-    document.getElementById("loseAudio").play();
+    //document.getElementById("loseAudio").play();
     $(".tableContainer2").css("visibility", "hidden");
     $(".youWin").css("visibility", "visible");
     $(".youWin").text("game over!");
     $("*").unbind();
     $(".youWin").append("<br>you hit 999 pts");
     $(".youWin").append("<div class='reset'>play again</div>");
-    $(".reset").click(function() {
-        reset();
-    });
+    reset();
 }

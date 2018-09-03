@@ -144,7 +144,8 @@ td {
 .youWin {
     visibility: hidden;
     color: #424242;
-    font-size: 40px;
+    font-size: 35px;
+    line-height: 43px;
     text-align: center;
     position: absolute;
     top: 65%;
@@ -166,14 +167,24 @@ td {
     font-size: 30px;
 }
 
-.playGame, .howToPlay, .title, .titleSymbols, .credits, .pickMode, .easy, .normal, .hard, .back {
+.playGame, .howToPlay, .title, .titleSymbols, .credits, .pickMode, .easy, .normal, .hard, .back, .reset {
     border: 2px #424242 solid;
     background-color: #ebebeb;
     border-radius: 10px;
 }
 
-.title, .pickMode {
+.reset {
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+
+.title {
     font-size: 55px;
+}
+
+.pickMode {
+    font-size: 45px;
 }
 
 .titleSymbols {

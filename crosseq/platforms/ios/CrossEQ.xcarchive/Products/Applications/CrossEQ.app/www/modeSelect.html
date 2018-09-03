@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>CrossEQ</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="modeChoices">
+            <table class="modeChoicesTable">
+                <tr>
+                    <td class="pickMode">
+                        Pick a Mode
+                    </td>
+                </tr>
+                <tr class="space">
+                    <td class="space">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="easy">
+                        Easy
+                    </td>
+                </tr> 
+                <tr class="space">
+                    <td class="space">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="normal">
+                        Normal
+                    </td>
+                </tr>
+                <tr class="space">
+                    <td class="space">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hard">
+                        Hard
+                    </td>
+                </tr>
+                <tr class="space">
+                    <td class="space">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="back">
+                        Wait, Go Back
+                    </td>
+                </tr>
+                <tr class="space">
+                    <td class="space">
+                    </td>
+                </tr>           
+            </table>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(".easy").click(function() {
+            location.href = "gameEasy.html";
+        });
+
+        $(".normal").click(function() {
+            location.href = "gameNormal.html";
+        });
+
+        $(".hard").click(function() {
+            location.href = "game.html";
+        });
+
+        $(".back").click(function() {
+            location.href = "index.html";
+        });
+    </script>
+</html>

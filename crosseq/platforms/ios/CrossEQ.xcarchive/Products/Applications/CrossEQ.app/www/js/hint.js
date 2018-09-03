@@ -12,9 +12,9 @@ solution.forEach(placeInArray);
 var selectedTrigger = false;
 
 function placeHint(exceptionArray) {
-    document.getElementById("hintAudio").pause();
-    document.getElementById("hintAudio").load()
-    document.getElementById("hintAudio").play();
+    //document.getElementById("hintAudio").pause();
+    //document.getElementById("hintAudio").load();
+    //document.getElementById("hintAudio").play();
     if (!exceptionArray) {
         var exceptionArray = [];
     }

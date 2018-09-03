@@ -1,3 +1,41 @@
+function checkAgain(selectedTrigger, whereFound, altSolution, found, movedFromVal, choicesArray, altSolution) {
+    if (selectedTrigger == true) {
+        $("[class=" + whereFound + "]").css("background-color", "#ecbc76");
+        $("[class=" + whereFound + "]").addClass("selected");
+        selectedTrigger = false;
+    }
+    if (whereFound.toString().length <= 2) {
+        var compare = $("[class='" + whereFound + "']").text();
+    } else {
+        var compare = $("[class=" + whereFound + "]").text();
+    }
+    if (solution[found] == compare) {
+        altSolution[found] = "nein";
+        if (movedFromVal != "+" && movedFromVal != "-" && movedFromVal != "×" && movedFromVal != "÷") {
+            found = altSolution.indexOf(parseInt(movedFromVal));
+        } else {
+            found = altSolution.indexOf(movedFromVal);
+        }
+        var oldWhereFound = whereFound;
+        whereFound = choicesArray[found];
+        choicesArray[found] = oldWhereFound;
+        if (whereFound.toString().length <= 2) {
+            $("[class='" + whereFound + "']").text("");
+        } else if ($(".selected").attr("class")) {
+            if ($(".selected").attr("class").split(" ")[0] == whereFound) {
+                $(".selected").text("");
+                $(".selected").removeClass("selected");
+                selectedTrigger = true;
+            } else {
+                $("[class=" + whereFound + "]").text("");
+            }
+        } else {
+            $("[class=" + whereFound + "]").text("");
+        }
+        checkAgain(selectedTrigger, whereFound, altSolution, found, movedFromVal, choicesArray, altSolution); 
+    }
+}
+
 function placeInArray(item, index) {
     solutionArray.push({
         num: item,
@@ -8,6 +46,8 @@ function placeInArray(item, index) {
 var solutionArray = [];
 
 solution.forEach(placeInArray);
+
+var altSolution = solution;
 
 var selectedTrigger = false;
 
@@ -23,13 +63,11 @@ function placeHint(exceptionArray) {
         solutionMinusExArray.splice(solutionMinusExArray.indexOf(item), 1);
     });
     if (solutionMinusExArray.length > 0) {
-        hintScore();
         var hintIndex = randomNum(0, solutionMinusExArray.length - 1);
         if ($("[class='" + choicesArray[solutionMinusExArray[hintIndex].ind] + " selected']").attr("class") != undefined) {
             $(".selected").css("background-color", "#ebebeb");
             $(".selected").removeClass("selected");
             selectedTrigger = true;
-            console.log(true);
         }
         var classOfHint = indexToClass(solutionMinusExArray[hintIndex].ind);
         var transfer = "";
@@ -53,13 +91,13 @@ function placeHint(exceptionArray) {
             exceptionArray.push(solutionMinusExArray[hintIndex]);
             placeHint(exceptionArray);
         } else {
+            //hintScore();
             if (classNameSelected == classOfHint) {
                 $("td:empty:not(.blank)").unbind();
                 $(".selected").text(solutionMinusExArray[hintIndex].num);
                 $(".selected").addClass("static");
                 $(".selected").css("background-color", "#ebebeb");
                 $(".selected").removeClass("selected");
-                console.log($(".selected").text());
             } else {
                 $("[class=" + classOfHint + "]").text(solutionMinusExArray[hintIndex].num);
                 $("[class=" + classOfHint + "]").addClass("static");
@@ -93,45 +131,7 @@ function placeHint(exceptionArray) {
                     altSolution[solutionMinusExArray[hintIndex].ind] = "nein";
                     choicesArray[found] = movedFrom;
 
-                    function checkAgain() {
-                        if (selectedTrigger == true) {
-                            $("[class=" + whereFrom + "]").css("background-color", "#ecbc76");
-                            $("[class=" + whereFrom + "]").addClass("selected");
-                            selectedTrigger = false;
-                        }
-                        if (whereFound.toString().length <= 2) {
-                            var compare = $("[class='" + whereFound + "']").text();
-                        } else {
-                            var compare = $("[class=" + whereFound + "]").text();
-                        }
-                        if (solution[found] == compare) {
-                            altSolution[found] = "nein";
-                            if (movedFromVal != "+" && movedFromVal != "-" && movedFromVal != "×" && movedFromVal != "÷") {
-                                found = altSolution.indexOf(parseInt(movedFromVal));
-                            } else {
-                                found = altSolution.indexOf(movedFromVal);
-                            }
-                            var oldWhereFound = whereFound;
-                            whereFound = choicesArray[found];
-                            choicesArray[found] = oldWhereFound;
-                            if (whereFound.toString().length <= 2) {
-                                $("[class='" + whereFound + "']").text("");
-                            } else if ($(".selected").attr("class")) {
-                                if ($(".selected").attr("class").split(" ")[0] == whereFound) {
-                                    $(".selected").text("");
-                                    $(".selected").removeClass("selected");
-                                    selectedTrigger = true;
-                                } else {
-                                    $("[class=" + whereFound + "]").text("");
-                                }
-                            } else {
-                                $("[class=" + whereFound + "]").text("");
-                            }
-                            checkAgain(); 
-                        }
-                    }
-
-                    checkAgain();
+                    checkAgain(selectedTrigger, whereFound, altSolution, found, movedFromVal, choicesArray, altSolution);
                 }
             }
             selectedTrigger = false;

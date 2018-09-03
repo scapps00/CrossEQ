@@ -15,7 +15,6 @@ var test = 1;
 function solutionGen() {
 
     var ops = ["+", "-", "×", "÷"];
-    //var ops = ["×", "÷"];
 
     function randomOp() {
         return ops[randomNum(0, 3)];
@@ -41,8 +40,6 @@ function solutionGen() {
 
     function findMultTotalInner(divisor, tally) {
 
-        //console.log(divisor);
-        //console.log(tally);
         var tally2 = tally;
         var totalIndex = randomNum(0, tally2.length - 1);
         var total = tally2[totalIndex];

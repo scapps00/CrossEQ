@@ -9,7 +9,5 @@ $(".answer").click(function() {
     $(".youWin").text("no score");
     $("*").unbind();
     $(".youWin").append("<div class='reset'>play again</div>");
-    $(".reset").click(function() {
-        reset();
-    });
+    reset();
 });

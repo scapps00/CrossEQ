@@ -14,7 +14,7 @@
         <br>
         <h3>Click a number or symbol to select it and click an empty space to place it.</h3>
         <br>
-        <h3>Click the hint button to be provided with the correct answer to a space. It is recommended to use at least a few hints if you want the game to be less difficult. But be careful! Each hint is worth 15 points more than the previous hint.</h3>
+        <h3>Click the hint button to be provided with the correct answer to a space. Each hint adds 100 points to your score. In Easy Mode, eight hints are provided to you for free automatically. In Normal Mode, you are given four free hints automatically. In Hard Mode, you are given zero.</h3>
         <br>
         <h3>The timer counts upward. You are given 30 points per minute that goes by.</h3>
         <br>
@@ -27,11 +27,12 @@
         <h3>Ready to play?</h3>
         <br>
         <div class="ready">Yes, I want to play!</div>
+        <br>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
         $(".ready").click(function() {
-            location.href = "game.html";
+            location.href = "modeSelect.html";
         });
     </script>
 </html>

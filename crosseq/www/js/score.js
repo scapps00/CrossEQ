@@ -1,6 +1,6 @@
 function hintScore() {
     if (parseInt($(".score").text()) + 100 < 999) {
-        var scoreCalc = (parseInt($(".score").text()) + (hintTracker.length * 15)).toString();
+        var scoreCalc = (parseInt($(".score").text()) + (100)).toString();
         if (scoreCalc.length == 2) {
             $(".score").text("0" + scoreCalc);
         } else {
@@ -50,7 +50,5 @@ function gameOver() {
     $("*").unbind();
     $(".youWin").append("<br>you hit 999 pts");
     $(".youWin").append("<div class='reset'>play again</div>");
-    $(".reset").click(function() {
-        reset();
-    });
+    reset();
 }

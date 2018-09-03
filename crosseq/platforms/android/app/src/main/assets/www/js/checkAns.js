@@ -44,21 +44,18 @@ function youWon() {
     document.getElementById("winAudio").play();
     $(".tableContainer2").css("visibility", "hidden");
     $(".youWin").css("visibility", "visible");
-    $(".youWin").text("you win!");
+    $(".youWin").append("<br>you win!");
     $("*").unbind();
     $(".youWin").append("<div class='reset'>play again</div>");
     $(".youWin").append("<div class='bestScoreDiv'>best score: <span id='bestScore'></span></div>");
     bestScore();
-    $(".reset").click(function() {
-        reset();
-    });
+    reset();
 }
 
 function bestScore() {
     if ($(".score").text() != "000") {
-        $("#bestScore").text("woo");
         window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fs) {
-            fs.root.getFile("bestScore.txt", { create: true, exclusive: false }, function(fileEntry) {
+            fs.root.getFile("bestScoreHard.txt", { create: true, exclusive: false }, function(fileEntry) {
                 fileEntry.file(function(file) {
                     var reader = new FileReader();
 
@@ -89,7 +86,6 @@ function bestScore() {
 }
 
 function deviceReady() {
-    console.log("device ready!");
 }
 
 function onErrorReadFile() {
