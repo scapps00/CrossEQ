@@ -96,7 +96,7 @@ function placeHint(exceptionArray) {
                 $("td:empty:not(.blank)").unbind();
                 $(".selected").text(solutionMinusExArray[hintIndex].num);
                 $(".selected").addClass("static");
-                $(".selected").css("background-color", "#ebebeb");
+                $(".selected").css("background-color", "#859dcf");
                 $(".selected").removeClass("selected");
             } else {
                 $("[class=" + classOfHint + "]").text(solutionMinusExArray[hintIndex].num);
